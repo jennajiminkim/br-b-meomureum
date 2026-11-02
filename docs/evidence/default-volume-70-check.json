@@ -1,0 +1,20 @@
+{
+  "commit": "a22dd87bf3d52ad59d09abf049bf51cdf31091f4",
+  "url": "https://br-b-meomureum.vercel.app/",
+  "defaultAmbientVolume": 0.7,
+  "guideVolume": 0.85,
+  "uiPercent": 70,
+  "audioContext": "running",
+  "lastError": null,
+  "sceneSwitchKeepsVolume": true,
+  "syntaxChecks": 2,
+  "nodeTests": {
+    "pass": 19,
+    "fail": 0
+  },
+  "actualMobileListeningAfterVolumeChange": false,
+  "userConfirmedBeforeChange": {
+    "vercelIncognitoExecution": true,
+    "mobileVoiceListening": true
+  }
+}
