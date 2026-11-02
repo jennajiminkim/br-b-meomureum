@@ -1,6 +1,6 @@
 {
   "scope": "current source files, not external Git history or audio semantic content",
-  "text_files": 64,
+  "text_files": 75,
   "asset_files": 72,
   "findings_without_values": [],
   "missing_or_decode_errors": [],

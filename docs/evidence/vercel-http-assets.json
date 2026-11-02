@@ -1,0 +1,693 @@
+{
+  "url": "https://br-b-meomureum.vercel.app/",
+  "method": "anonymous urllib requests without cookies or authorization; compares current checkout dist bytes",
+  "files": 86,
+  "matching": 85,
+  "results": [
+    {
+      "path": "README.md",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "session.js",
+      "status": 200,
+      "mime": "application/javascript; charset=utf-8",
+      "bytes": 878,
+      "sha256_matches": true,
+      "sha256": "09113e7b4faa6096fadb1a7b619bab45e165b490bfea7ba75af54493779af889"
+    },
+    {
+      "path": "media.js",
+      "status": 200,
+      "mime": "application/javascript; charset=utf-8",
+      "bytes": 2402,
+      "sha256_matches": true,
+      "sha256": "d3542a541af5a5babbb86a66ce2f0881f52c91be5ab90163ebb636c7086bb249"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "status": 200,
+      "mime": "application/manifest+json; charset=utf-8",
+      "bytes": 522,
+      "sha256_matches": true,
+      "sha256": "c7f0055a7a1465b767c5a88cc2f8137a970431715ea6d384bff4f65ffda03a3f"
+    },
+    {
+      "path": "app.js",
+      "status": 200,
+      "mime": "application/javascript; charset=utf-8",
+      "bytes": 16606,
+      "sha256_matches": true,
+      "sha256": "16e7279d399bb66b88a32c837ba8c5baf4444dcb2bfc2cac164c3475c5073174"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "mime": "text/css; charset=utf-8",
+      "bytes": 30731,
+      "sha256_matches": true,
+      "sha256": "949cc07a52093f451df3ed9e0d1da52123a36ae27c7af93ebafdd6e8d6405c08"
+    },
+    {
+      "path": "audio-mix.js",
+      "status": 200,
+      "mime": "application/javascript; charset=utf-8",
+      "bytes": 451,
+      "sha256_matches": true,
+      "sha256": "659b7352879794611343a173dca1e92a8ad0fca5f5ec96fdefcb585d3c06fa33"
+    },
+    {
+      "path": "assets.js",
+      "status": 200,
+      "mime": "application/javascript; charset=utf-8",
+      "bytes": 825,
+      "sha256_matches": true,
+      "sha256": "757fbd9dfeb6a2f815ccbb01f126265ed3352e9fc96485005ab1903172ed58dc"
+    },
+    {
+      "path": "guides.js",
+      "status": 200,
+      "mime": "application/javascript; charset=utf-8",
+      "bytes": 7952,
+      "sha256_matches": true,
+      "sha256": "fbfa52a30519eb004608c7561cab3d592135e2787de1c41d42c0588f404c9676"
+    },
+    {
+      "path": "narration.js",
+      "status": 200,
+      "mime": "application/javascript; charset=utf-8",
+      "bytes": 3587,
+      "sha256_matches": true,
+      "sha256": "6615d4675be1cf600ce1dfde9f725ceb94947953c0e81596fbef7919204afaf6"
+    },
+    {
+      "path": "audio.js",
+      "status": 200,
+      "mime": "application/javascript; charset=utf-8",
+      "bytes": 6810,
+      "sha256_matches": true,
+      "sha256": "0b6dac41969ea9b6f86e27842ba5e8af3d7514c5e5ae98c2f551377781a5428a"
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "mime": "text/html; charset=utf-8",
+      "bytes": 19893,
+      "sha256_matches": true,
+      "sha256": "7abd075164bf8e77ee325c14ecc3c18b3f1c957e53b4aaf58edb6deb3c6a321d"
+    },
+    {
+      "path": "narration-assets.js",
+      "status": 200,
+      "mime": "application/javascript; charset=utf-8",
+      "bytes": 21837,
+      "sha256_matches": true,
+      "sha256": "13a1dbbc6faa50930cf920bb60a936d275cb193bc66e123ee37bd35858f70fd3"
+    },
+    {
+      "path": "motion.js",
+      "status": 200,
+      "mime": "application/javascript; charset=utf-8",
+      "bytes": 8107,
+      "sha256_matches": true,
+      "sha256": "5daee3c5b4e3c5dfc03e90f3fd21a05550d7c0aa980190f17ef7a2a195653860"
+    },
+    {
+      "path": "assets/water-poster.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "bytes": 262848,
+      "sha256_matches": true,
+      "sha256": "00b5049b20f9b8be2b20b373330d18efbd1ec105cb7f5fde0b069a45558d8502"
+    },
+    {
+      "path": "assets/water-poster-aqua.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "bytes": 258326,
+      "sha256_matches": true,
+      "sha256": "d4671c1a4e67a13518f59d18be38ab12422e5ffe4d1156c83fcc643977b87031"
+    },
+    {
+      "path": "assets/forest-poster.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "bytes": 666496,
+      "sha256_matches": true,
+      "sha256": "511355e5658ba33011c14c3c7f87412a4ef49f7cc4504253fd25f26ff4c08af4"
+    },
+    {
+      "path": "assets/icon.svg",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "bytes": 324,
+      "sha256_matches": true,
+      "sha256": "431ff7df7fa4c2292f8ed711f24001834ab5f4393b30694fdbf0d42200753a16"
+    },
+    {
+      "path": "assets/app-icon.png",
+      "status": 200,
+      "mime": "image/png",
+      "bytes": 3353,
+      "sha256_matches": true,
+      "sha256": "f898b58599442e6fd24f6f9635e85fa311828a2a075c19e7f3879317f6176f1d"
+    },
+    {
+      "path": "assets/water-surface-aqua.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "bytes": 280602,
+      "sha256_matches": true,
+      "sha256": "4d0eb58149151569e2acfcc5060b458e785806d474b70afe8f655c0f707de5f1"
+    },
+    {
+      "path": "assets/forest-fallback.svg",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "bytes": 2217,
+      "sha256_matches": true,
+      "sha256": "90fa54c95e315cd62eae61c6ad5092bfcee8a0b842431df4dea6c9c79a1c9261"
+    },
+    {
+      "path": "assets/app-icon-192.png",
+      "status": 200,
+      "mime": "image/png",
+      "bytes": 11859,
+      "sha256_matches": true,
+      "sha256": "9a30a46f9a491dc8bfe191eadb3e3ed616c9157518b8d3a2684b1b377ab63e59"
+    },
+    {
+      "path": "assets/audio/porcelain-soft-low-v044.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 69634,
+      "sha256_matches": true,
+      "sha256": "24acb8ad5ce2b9cde82a09a15477aad69f131de364b38e56fa7d588eb35af38a"
+    },
+    {
+      "path": "assets/audio/forest-songbird-3-v045.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 63991,
+      "sha256_matches": true,
+      "sha256": "88ccd78858a306f4f519fec6fa09c6ab7231cb4a1282b80ec9fdea4d9733deb4"
+    },
+    {
+      "path": "assets/audio/water-porcelain-bed-v043.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 1537297,
+      "sha256_matches": true,
+      "sha256": "67e7f3288a553381a36392d4f9d171d0592c3e0d0fb3c1b2c2f275468d78a263"
+    },
+    {
+      "path": "assets/audio/forest-songbird-2-v045.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 63991,
+      "sha256_matches": true,
+      "sha256": "51c80aa06be3954b1abcb6c234ac12c60186ac261dd64235340f9d4231085164"
+    },
+    {
+      "path": "assets/audio/forest-songbird-1-v045.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 63991,
+      "sha256_matches": true,
+      "sha256": "513c1950df94730f7d497fd7ec41ee4b40195df01f690827c0339f41601bd2b2"
+    },
+    {
+      "path": "assets/audio/porcelain-soft-high-v044.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 69634,
+      "sha256_matches": true,
+      "sha256": "09c1c5d4cd5e3edfb6ab4ce5e2a18a0b401772d0f3406d3bf262df877fc6b3d9"
+    },
+    {
+      "path": "assets/audio/porcelain-soft-middle-v044.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 69634,
+      "sha256_matches": true,
+      "sha256": "a220f5d21f4405f1d6dce1db0457d3dadd4d61901f46db18cf4ca10a8cae778d"
+    },
+    {
+      "path": "assets/audio/forest-breeze-bed-v045.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 1117875,
+      "sha256_matches": true,
+      "sha256": "8231d411ad3dd662c96d9d9514058e1b6c41fa4e2df4b01b1c4f5badd7efddd6"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/70449cd41b1a974cf289.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 126267,
+      "sha256_matches": true,
+      "sha256": "3f45ec1e74d8f2e3969bde19936c2992f20230d55dae3643efe23138f0e428d9"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/5ef336f4bbc0d61301a5.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 77366,
+      "sha256_matches": true,
+      "sha256": "a2e5addfcfe9733d67cbc81b7291407d620685e864eb7927d8aee37bb9276483"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/6709abdfb19eae9cb5a3.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 118744,
+      "sha256_matches": true,
+      "sha256": "558e35b2b7b000095fb864c7c9ab03de86b773887c5cefb3eb111567cff18576"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/5af1558171000f1419ba.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 131701,
+      "sha256_matches": true,
+      "sha256": "067450968fd1cb6fe0ccb5757b48664189ceeea8e6a10897519003806413f2b7"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/cf5460b2649a20193450.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 135880,
+      "sha256_matches": true,
+      "sha256": "e8c8f64f03b4aa18c3d7c9b47a0dedf37cee98a7d941f3cdfeab0fa2e0619a7d"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/ddb6f16a07cce3f4dc04.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 74022,
+      "sha256_matches": true,
+      "sha256": "97fccff84e15cde2448eece9688adba964785d3f1986fdb056d52effd9a2f87e"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/76d522e22c6973ac44d0.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 226995,
+      "sha256_matches": true,
+      "sha256": "ebb85578f5bc82494dc85ab17578f861d5e976b6af6c79a305f7ccf9532c60ba"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/c29a4d45736e693f1be0.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 118326,
+      "sha256_matches": true,
+      "sha256": "1b86455aaff91803f2bbc6d3829b09ed1569269115f8ba3610ac72018d15b61b"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/fa8db458e5d647b404f1.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 131701,
+      "sha256_matches": true,
+      "sha256": "fdc9389b595d0737e0e6f59aad2dda43eb7a7aa0f4051d7db390f7f30574ba50"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/1719aa89d16b279dc9ee.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 76948,
+      "sha256_matches": true,
+      "sha256": "1b0f11aae8a9326b46fc5f2b7bb52a7dea631d151c4b111ea5937034be0b5a91"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/4b0588cb296e41751bad.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 132955,
+      "sha256_matches": true,
+      "sha256": "b0aa62f508f465b057d4682b0e04cd2bfd122591b51c3de46e381402885de033"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/6a259422efb3fe4b69f5.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 81964,
+      "sha256_matches": true,
+      "sha256": "1441242b72875800acbe7cca8a215dc9265743cfb2fda6fc0d4aa30e5903122d"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/f62777bc9efa185e0fc4.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 134626,
+      "sha256_matches": true,
+      "sha256": "fa056d85f3ff4a23d081678543ff4fb702a33156d6330d57aa9f1d0b1320b97c"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/998c78b7d80372567871.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 91995,
+      "sha256_matches": true,
+      "sha256": "027ee7b41e747b257f232a79abe12e0085005aa3b83fde0819afa655573fbf54"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/20760743a63f9e049c45.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 88233,
+      "sha256_matches": true,
+      "sha256": "ec42faebbec713e17590865b5152ceedf9b00a5923537c103214847e6bb1108b"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/a3bbe0668bf6d417640d.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 121252,
+      "sha256_matches": true,
+      "sha256": "84e04125d409561fcba3b52509ee021089c0f50c9954045bf308c4ce31c0e9c3"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/765d32f2e46b9d6aea85.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 66917,
+      "sha256_matches": true,
+      "sha256": "d8841fc7b014e3809d13b286061208e2bb7e093748799cec710aac8c12bddd9d"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/9d47fe46e0053acd5443.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 155106,
+      "sha256_matches": true,
+      "sha256": "d63ae9f3867d097101b7ec93f27df5797b4b44c203ff1d3495b4da9bda8482ca"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/695f89a9cb3b128f1cb6.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 116654,
+      "sha256_matches": true,
+      "sha256": "789aa20deb51f068e48fb6048b62924195be1808f9c16fb4ed00d3a45f8208a6"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/2b8f3f5ba68775fbac49.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 85307,
+      "sha256_matches": true,
+      "sha256": "023df519a80475dde3a14d43746aecd2f757e82262043f1ef42e3fe10ef1c5f3"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/7820bf4aa3a72c3bc027.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 126685,
+      "sha256_matches": true,
+      "sha256": "54c67dca2e9e51899128e4934136b92ea12faa51d371db8a09c931c8207b7986"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/209f2ad4f7c654c7a11a.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 69007,
+      "sha256_matches": true,
+      "sha256": "6cf7976f86111106cf5a6e6fd1689b3f6831e62746a767318978f7808d23b902"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/008ee5c211d7fb700be8.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 63991,
+      "sha256_matches": true,
+      "sha256": "11d04bb56e699351c73bad62ca8aea0d4586c3099d401460d05384fa6de5bbf4"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/9edd59be1ab47b76ab34.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 118326,
+      "sha256_matches": true,
+      "sha256": "8279ad50497641046574d6bae8f41872ac410a6ef0a82feea746cdceb7509466"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/f5a68d6617ace6c17cf9.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 102444,
+      "sha256_matches": true,
+      "sha256": "1a40a6f0f71127b29eeeba7ef520bdfba1b3ac79d21e6b7d407f4384b3ef957a"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/cc2613c68bb3c9a12aff.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 58558,
+      "sha256_matches": true,
+      "sha256": "e0e1c24acfccb9e38a80d7396f6ccf69e78cc22f8f1d109761cbbec4658e536f"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/ab47986b5f2c09042ac4.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 112893,
+      "sha256_matches": true,
+      "sha256": "f80b6c5d0ee0d06a6dec90d8416dd0918175af4c37676dacfc6790f5daf5506e"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/cb939d98301e919e67e8.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 103279,
+      "sha256_matches": true,
+      "sha256": "9893093205a3d7deb5103848ab404a47e7343e1ced10b8cdd33903feb0467b1f"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/4f10b082f4af06b87658.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 71515,
+      "sha256_matches": true,
+      "sha256": "d12b890202d0a8859a8f72fcf17b03e02180a17ac8668e96ba21846b744f7ef3"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/e0296c04b54079d07605.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 124177,
+      "sha256_matches": true,
+      "sha256": "ffe8e173da7c73ee5c69d944f1764fedbdcbb19cf248d422c36f8b00e33d56c2"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/029fa87acc6dfdd84685.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 147165,
+      "sha256_matches": true,
+      "sha256": "1d1919a77d5ac0f6bbce5bd2b2f0349a7dfc150438e41c9c9edfae4d31afd44f"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/06bde62e5d0cbfecaacf.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 122088,
+      "sha256_matches": true,
+      "sha256": "2da790d00e1fa7522bdb26af8d7442b139157564c33d651371acdc8fad0d9f49"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/513dbe3559831aa2c857.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 87815,
+      "sha256_matches": true,
+      "sha256": "d9c67690ba01e1a6f0691565956243f36b4ff0292e4454638d73caac20489696"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/2d291a88cbfc01176d1e.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 127103,
+      "sha256_matches": true,
+      "sha256": "649c8a8ebfbf6d76ac24a3e6d02cb1e22a717e7ac97a2953336e19ecdc6d73ed"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/847c722dbfd4388158c1.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 142568,
+      "sha256_matches": true,
+      "sha256": "15a95267bad7aa1460eea412aed6c2614ab765076fd269f10a6c287920667089"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/8c36e5c2629706ea96cd.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 123342,
+      "sha256_matches": true,
+      "sha256": "a17226876f6b3647fd0d2750fbf5d45f89d0f9401562184dda947c8dfe90150f"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/462b2c06512ae6a3cbb6.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 70679,
+      "sha256_matches": true,
+      "sha256": "2dc56e296ab9e60ebbbeae68ebb4a6d7992e742f2cc05dda92e96d06ab6509fe"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/2830ade32dd12350b9a2.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 80710,
+      "sha256_matches": true,
+      "sha256": "04fc6241ec0d34bfb0d9d1247d056da6a96b33e080f4f54d6716f6ea475d7dc2"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/a8bf6ebe4cc0cab4133c.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 113728,
+      "sha256_matches": true,
+      "sha256": "112f826e9e1c9f7425f3106038e4da8a25e95f2425dbf0bca9dd45e7ce5eddcf"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/breath-5-full-preview.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 4801141,
+      "sha256_matches": true,
+      "sha256": "95663ee4ffa43cc55c8cf97551ada89c1029378fb1764076a7af27ab655c1eef"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/98170b49e05abb6f46a6.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 143404,
+      "sha256_matches": true,
+      "sha256": "5c3cdef0657ef2ede402555def909bd20fc6fa72772b13c0c5dfa636c0142c72"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/cf695688af4d84336b12.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 69007,
+      "sha256_matches": true,
+      "sha256": "cd14c1d74ba753f76ebcefe03826f79e90611cfa82c212e7ae5ad75bf2c0e559"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/f85438876ff7ed5445f3.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 116236,
+      "sha256_matches": true,
+      "sha256": "1587b3f37098fe8522ff63dab25b843ae23557e9e44ec10870b4fafc1d072706"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/6eaa7c2f858b02ce6947.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 124595,
+      "sha256_matches": true,
+      "sha256": "166f619151fe95d37631c0be5fdb002690097542196e2eef351fccf5b64a079e"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/3c3d9564d7aa1f24a9d9.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 109549,
+      "sha256_matches": true,
+      "sha256": "932181ea33bf4ecb492e4134486a65e6d721c8708c20921160ca71f2b5fe3a2f"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/4227097c89cfa468d012.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 107041,
+      "sha256_matches": true,
+      "sha256": "fc19703b9b1c67f438feb42e9a11ce1840a564b643f9a8f896baa243ed46ddbe"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/17b0ce6d6fab3e18a748.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 91577,
+      "sha256_matches": true,
+      "sha256": "a739de88dd5e2a32b13eddd6b5f697a7e20d0908f5f03b1c2389f4faffce4ef5"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/75954e089880cd3d161b.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 76112,
+      "sha256_matches": true,
+      "sha256": "2f2ca180bcb4d484e08aee49b05ae5825c4bab77586a198df10e2888fe70ee33"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/2f66341ca798aaea67e5.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 117908,
+      "sha256_matches": true,
+      "sha256": "3780e6d934448d98cae154d0406fe33313cfe174254f62226c0ce6cb184956d9"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/3515c20ccb6dc4ab349d.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 113311,
+      "sha256_matches": true,
+      "sha256": "2ac21d2ed6acdc000f91a401cbe599811a555c34fbe41d2a83d34d7853bb40bb"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/c2e70e9e80922cae60df.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 125013,
+      "sha256_matches": true,
+      "sha256": "2e9f87ce0bc3fcbbe0f6800bf31cde1776a44a4820eef3a4c796f6f8b7c69e65"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/f81912f889536cd2178f.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 113728,
+      "sha256_matches": true,
+      "sha256": "e7b25e534a70f3688067d6c4bfa05b33481757d1bc1dc6bc28c70d8516db1c95"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/db524d325aa300f4ff46.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 121252,
+      "sha256_matches": true,
+      "sha256": "2bff0945e77db4b3b9bd17c37d46622b2a2e1865be37a45212fc94bce9c2a5c9"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/4db93515a49c58ce3116.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 62319,
+      "sha256_matches": true,
+      "sha256": "4bee04dba4ff959c5dde32cccb73a8e8ffdfd40e81d796010ab17420486b0e55"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/aae103b205b1133252df.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 83635,
+      "sha256_matches": true,
+      "sha256": "2311ee27647da6864ebc2231130041410812aadaf23b9df022daaa6835f755b5"
+    },
+    {
+      "path": "assets/audio/narration/ko-kr-v042/12439dd37c631e549d82.mp3",
+      "status": 200,
+      "mime": "audio/mpeg",
+      "bytes": 108713,
+      "sha256_matches": true,
+      "sha256": "2a75aaabdf1c2c87f7042c4fa9dbbc3c0b124634c102e6a9ad6262a3cbb5bd55"
+    }
+  ],
+  "note": "85 runtime files/assets match; dist/README.md is a non-runtime development note returning404. No current image/audio/JS missing."
+}

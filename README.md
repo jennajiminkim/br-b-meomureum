@@ -4,7 +4,7 @@
 
 - 기존 공개 앱: https://meomureum-quiet-space-jimin.jimn2xo.chatgpt.site/
 - GitHub: https://github.com/jennajiminkim/br-b-meomureum
-- 새 Vercel URL: **아직 없음 — 연결된 계정에서 프로젝트 생성 403으로 배포 미완료.**
+- 제출용 Vercel 공개 앱: https://br-b-meomureum.vercel.app/ — 공개 홈·핵심 흐름·실행 파일 일치 확인.
 - [최종 검증·평가표·제출문](docs/BRB_REPORT.md)
 - [미디어 출처와 사용 조건](docs/MEDIA_LICENSES.md)
 
@@ -22,11 +22,11 @@ http://localhost:8000 에 접속합니다. HTML 더블클릭(file://) 대신 HTT
 
 ## Vercel Import 설정
 
-GitHub `jennajiminkim/br-b-meomureum` → main을 Import합니다. Root Directory: 저장소 루트, Framework Preset: Other, Build Command: 비움, Install Command: 비움, Output Directory: dist. 같은 내용이 vercel.json에 있습니다. 기존 BR-A 프로젝트를 선택하거나 덮어쓰지 않습니다. 생성 권한이 있는 실제 계정에서 새 프로젝트로 Import해야 합니다. 배포 성공 후 반환된 실제 URL을 문서·대표작에 반영하고 새 시크릿 창 및 휴대폰 검증을 해야 합니다.
+GitHub `jennajiminkim/br-b-meomureum` → main을 Import합니다. Root Directory: 저장소 루트, Framework Preset: Other, Build Command: 비움, Install Command: 비움, Output Directory: dist. 같은 내용이 vercel.json에 있습니다. 기존 BR-A 프로젝트를 선택하거나 덮어쓰지 않습니다. 이 설정으로 재현할 수 있으며 현재 제공된 공개 주소의 배포를 확인했습니다. BR-A 대표작과 문서의 주소도 갱신했습니다. Vercel 대시보드 Git 연결 상태는 이번 API 권한으로 확인하지 못했습니다. 새 시크릿 창 및 실제 휴대폰 검증은 남았습니다.
 
 ## 현재 검증의 한계
 
-로컬 cloud Chrome의 UI·오디오 이벤트와 Node 테스트를 실제 실행했습니다. 실제 휴대폰 청취나 새 Vercel 주소, 새 시크릿 창 검증을 대신 통과로 표시하지 않습니다. 사용자 제공 이전 5분 한국어 음성 정상 재생 및 최종 자연음 승인 의견은 별도 사용자 증거입니다. [상세 결과](docs/BRB_REPORT.md).
+로컬 및 Vercel 공개 앱 cloud Chrome UI·오디오 이벤트와 기존 Node 테스트를 확인했습니다. 익명 HTTP로 실행 파일·에셋85개 원본 일치를 확인했습니다. 실제 휴대폰 청취·새 Chrome 시크릿 창 검증을 대신 통과로 표시하지 않습니다. 사용자 제공 이전 5분 한국어 음성 정상 재생 및 최종 자연음 승인 의견은 별도 사용자 증거입니다. [상세 결과](docs/BRB_REPORT.md).
 
 ---
 

@@ -1,0 +1,46 @@
+Back: about:blank (new tab previous document)
+Forward: https://br-b-meomureum.vercel.app/
+- banner:
+  - button "머무름 홈으로 이동":
+    - text: 머무름
+    - generic: M E O M U R E U M
+  - button "소리 활성화": ♪소리 활성화
+  - button "이 공간에 대해"
+- main "마음을 바꾸려 하지 않아도 괜찮아요.":
+  - paragraph: A QUIET PLACE TO BE
+  - heading "마음을 바꾸려 하지 않아도 괜찮아요." [level=1]:
+    - text: 마음을 바꾸려 하지
+    - text: 않아도 괜찮아요.
+  - paragraph: 자연의 소리와 짧은 안내 속에서, 잠시 머물다 가세요.
+  - paragraph: 마음을 고치거나 통제하기보다, 지금의 호흡과 감각을 알아차리는 공간.
+  - paragraph: "과제 10 연구 · 「성인 범불안장애 치료 전후 뇌 기능적 연결성 변화: 공개 출판자료의 근거 종합과 요약통계 재분석」"
+  - paragraph: 일상에서 잠시 멈추고 싶은 사람이 자연의 소리와 짧은 안내로 비판단적 마음챙김을 경험하도록 돕습니다.
+  - paragraph: 일부 연구의 연결성·불안 변화 연관성에서 출발했으며, 치료 간 차이와 이 앱의 치료 효과·뇌 변화는 확인되지 않았습니다.
+  - generic: 01 — CHOOSE YOUR SPACE
+  - generic: 오늘은 어떤 공간에 머물고 싶나요?
+  - group "명상 공간 선택":
+    - article:
+      - generic: SPACE 01
+      - generic: 8초 미리 듣기
+      - button "물결과 울림 공간 선택"
+      - button "물결과 울림 소리 8초 미리 듣기": ♪ 소리 미리 듣기
+      - generic: 포스터 애니메이션
+      - paragraph: WATER & RESONANCE
+      - heading "물결과 울림" [level=2]
+      - paragraph: 고요한 수면 위, 우연히 피어나는 맑은 울림
+      - generic: ↗
+    - article:
+      - generic: SPACE 02
+      - generic: 8초 미리 듣기
+      - button "숲의 숨결 제주 공간 선택"
+      - button "숲의 숨결 제주 소리 8초 미리 듣기": ♪ 소리 미리 듣기
+      - generic: 포스터 애니메이션
+      - paragraph: BREATH OF JEJU
+      - heading "숲의 숨결 — 제주" [level=2]
+      - paragraph: 비가 갠 아침, 나무 사이로 번지는 숲의 소리
+      - generic: ↗
+  - paragraph: 공간을 선택하면 명상 설정으로 이동합니다. 소리를 활성화한 뒤 카드에 잠시 머물면 8초 미리 듣기가 시작됩니다.
+  - paragraph: 명상과 뇌 기능 변화에 대한 관심에서 출발한 비치료적 보조 도구입니다. 의료적 치료를 대체하지 않습니다.
+  - generic: 로그인도, 기록도 없이. 필요한 순간에 잠시.
+  - generic: DESIGNED FOR A MOMENT OF STILLNESS
+- status

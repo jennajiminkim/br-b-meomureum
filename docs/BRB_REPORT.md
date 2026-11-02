@@ -1,10 +1,10 @@
 # BR-B 최종 검증·보완 보고서
 
-검증일: 2026-11-02 (한국). **전체 완료 아님: 신규 Vercel 프로젝트 생성 권한 403으로 배포가 막혀 있습니다.** 현재 공개 URL과 새 소스의 범위를 구분합니다.
+검증일: 2026-11-02 (한국). **사용자가 제공한 Vercel 공개 배포를 확인했습니다.** 실제 휴대폰 청취와 새 Chrome 시크릿 창 검증은 남아 있으며, 전체 기준을 무조건 통과로 처리하지 않습니다.
 
 - 기존 공개 앱(변경하지 않음): https://meomureum-quiet-space-jimin.jimn2xo.chatgpt.site/
 - 새 원본 기반 소스: https://github.com/jennajiminkim/br-b-meomureum
-- 새 Vercel URL: 없음. 배포하지 않은 주소를 추정해 기재하지 않습니다.
+- 제출용 Vercel 공개 URL: https://br-b-meomureum.vercel.app/
 - BR-A: https://br-a-portfolio-lime.vercel.app/#projects
 - 원본 provenance: Work/Sites 프로젝트 appgprj_6ae7e2e58c0c81918326d3e89f4e7933, 원본 commit fe770552e44e3cf60aa637e70876555317840bb7. 원본 Git 저장소에서 확보한 정적 소스·포스터·음원·9종 대본·테스트·제작 스크립트이며 웹 화면 재제작이 아닙니다. MP4/WebM은 원래 없고 video 태그의 소스는 비어 있습니다. 포스터 애니메이션이 실제 구현입니다. TTS 모델 가중치·외부 음원 원본·기존 업로드 참고 영상은 앱 실행 필수 에셋이 아니며 포함하지 않습니다.
 
@@ -16,7 +16,7 @@
 
 ## C02 · 세 가지 실제 행동
 
-검증 환경: 로컬 preview http://terminal.local:4173/ 의 cloud Chrome. 실제 휴대폰이나 새 Vercel 배포 검증이 아닙니다. 이벤트 기록은 소리를 사람이 들었다는 증거가 아닙니다.
+검증 환경: 로컬 preview http://terminal.local:4173/ 의 cloud Chrome. 아래 C02 표는 이전 로컬 검증 기록이며, 이번 Vercel 실배포 검증은 문서 끝의 추가 기록에서 구분합니다. 이벤트 기록은 소리를 사람이 들었다는 증거가 아닙니다.
 
 | 행동 | 실행 위치·실제 조작 | 기대 | 실제 결과·오류 | 증거 |
 |---|---|---|---|---|
@@ -28,7 +28,7 @@
 
 ## C03 · 첫 화면 변경
 
-메인 카피와 갤러리를 유지했습니다. home-intro 바로 아래 작은 연구 소개 영역에 논문 정식 제목, 대상·역할 한 문장, 근거와 한계를 추가했습니다. 상세 소개에 숨기지 않았습니다. evidence/brb-home.jpg/.txt는 로컬 수정본입니다. 기존 공개 ChatGPT 사이트에는 이번 수정이 반영되지 않았으며 새 Vercel 배포가 남았습니다. 375×812 CSS iframe viewport에서 제목·대상·한계가 첫 화면에 들어가는 것을 확인했습니다. 실제 휴대폰·새 Vercel에서는 미검증입니다.
+메인 카피와 갤러리를 유지했습니다. home-intro 바로 아래 작은 연구 소개 영역에 논문 정식 제목, 대상·역할 한 문장, 근거와 한계를 추가했습니다. 상세 소개에 숨기지 않았습니다. evidence/brb-home.jpg/.txt는 로컬 수정본입니다. 기존 공개 ChatGPT 사이트는 보존했으며, 새 Vercel 공개 홈에서 이번 수정의 반영을 확인했습니다(evidence/brb-vercel-home.jpg/.txt). 375×812 CSS iframe viewport에서 제목·대상·한계가 첫 화면에 들어가는 것을 확인했습니다. 실제 휴대폰은 미검증이며, Vercel 데스크톱 홈은 확인했습니다.
 
 ## C04 · 근거 → 설계 → 행동 → 한계
 
@@ -57,8 +57,8 @@
 | 파일 로딩 실패 | 내레이션 실패·취소 단위 검사 | 부분 충족; FILE_PLAY_FAILED/HTTP_404 및 취소 시 무재생. 실제 자연음 누락 AMBIENT_LOAD alert 확인 | tests/narration.test.mjs |
 | 영상 로딩 실패 | 영상 없음·포스터 표시 실확인, error 핸들러 코드 검토 | 부분 충족; 실제 손상 영상은 미검증 | dist/assets.js, dist/media.js |
 | 작은 모바일 화면·실기기 | 375×812 iframe 실제 렌더·설정5분 클릭 | 부분 충족; 콘텐츠 viewport360px(scrollbar15px), scrollWidth360으로 가로 넘침 없음. 실제 휴대폰 미검증 | evidence/brb-mobile-375.*, brb-mobile-settings.* |
-| 새로고침 | 홈에서 실제 reload | 충족; 홈·소리 활성화로 초기화. 세션 도중 reload는 별도 미검증 | 브라우저 추가 기록 |
-| 브라우저 뒤로 가기 | 별도 실행 안 함 | 미검증; 화면별 history route 없음, 브라우저 back은 이전 사이트 이동 가능 | dist/app.js |
+| 새로고침 | Vercel 세션 중 실제 reload | 충족; 진행 상태를 저장하지 않고 홈·소리 활성화로 초기화 | evidence/brb-vercel-reload.txt |
+| 브라우저 뒤로 가기 | Vercel back→about:blank, forward→공개 앱 | 충족(관찰 범위); 내부 화면 history route는 없어 이전 문서로 이동하며 복귀 시 홈. 화면별 뒤로 이동 기능은 아님 | evidence/brb-vercel-history.txt |
 | 독립 음량 | 실제 UI 자연음35→30%, 안내85→80% 독립 조작 | 부분 충족 | dist/app.js, tests/narration.test.mjs |
 
 사용자가 이전에 실제 휴대폰 호흡5분의 한국어 음성 정상 재생과 v0.4.5 자연음 만족을 확인했습니다. 이번 새 배포·9개 세션·최종 피치 전부의 실기기 확인으로 확대 해석하지 않습니다. 브라우저 console에는 확장프로그램 chrome-extension 출처의 metadata 오류가 있었으며 앱 자체 오디오 진단 lastError는 null이었습니다.
@@ -73,13 +73,15 @@
 
 ## C08·C15·C22 · 공개 배포 상태
 
-원본 앱의 로그인 없는 공개 접근·시크릿 창 확인은 사용자가 직접 확인했다고 이번 요청에서 제공했습니다. 기존 증거 파일은 사용자 보유 자료로 유지하며 이번 보고서가 새 시크릿 창 검사를 대신하지 않습니다. 이 작업에서 원본·BR-A 기존 사이트는 삭제하지 않았습니다.
+제출용 공개 주소: https://br-b-meomureum.vercel.app/ . 사용자가 주소를 제공한 뒤 cloud Chrome에서 계정 생성·로그인·초대·CAPTCHA·비밀번호 요구 없이 홈·연구 소개·두 공간을 확인했습니다. 인증 쿠키나 Authorization 없이 독립 HTTP 요청을 보내 홈과 실행 파일도 확인했습니다. 이것은 새 Chrome 시크릿 창의 실측과 구분합니다.
 
-새 BR-B GitHub public 저장소에 실제 원본 기반 앱을 업로드했습니다. 정적 배포: Root 저장소 루트 / Framework Other / Build 비움 / Install 비움 / Output dist. vercel.json 포함. Vercel 연결 team jennakim에서 create_project는 403 forbidden, “You don't have permission to create the project.”. 해당 연결에서 BR-A get_project도404, 목록에는 다른 프로젝트만 있습니다. 별도 인증된 Vercel CLI 없음. 다른 계정의 권한을 추측하거나 보안 우회로 만들지 않았습니다. 권한 있는 Vercel 계정으로 Import가 남았습니다. GitHub 업로드가 Vercel 성공을 뜻하지 않습니다. 새 URL·휴대폰·데스크톱·시크릿·CAPTCHA 검사 모두 새 Vercel 기준 미검증입니다.
+배포 파일 86개 요청 중 실행 파일·에셋 85개는 HTTP200 및 로컬 원본과 SHA256이 같았습니다. 현재 사용 미디어 72개 전부 포함입니다. dist/README.md 한 개는404였으며 이 배포에서 제공되지 않은 비실행 개발 메모입니다. 이미지·음원·JS 누락은 발견하지 못했습니다(evidence/vercel-http-assets.json). 실제 Vercel 대시보드의 Git 연결/배포ID는 연결된 API 계정 권한 범위에서 확인하지 못했으며, API가 배포했다고 주장하지 않습니다.
+
+정적 설정은 저장소 루트 / Framework Other / Build·Install 비움 / Output dist, vercel.json입니다. 앞선 API 생성403은 당시 시도의 실패 이력이고 현재 공개 배포 실패를 뜻하지 않습니다. 원본 ChatGPT 사이트는 유지했습니다. 기존 공개 앱의 시크릿 접근은 사용자 확인 자료이며, **새 Vercel URL의 실제 휴대폰 청취·새 시크릿 창은 아직 미검증**입니다.
 
 ## C10 · BR-A 대표작 연결과 순서
 
-BR-A index.html의 13번 앱 카드 한 곳만 교체했습니다. 작품명·논문 기반 비치료적 설명·한계와 **현재 실제로 작동하는 기존 공개 앱 링크**를 연결했습니다. GitHub commit72765d3a46c5579ac145c84cfac93db063717d76. 기존 Vercel 자동배포가 반영된 공개 페이지에서 카드·링크를 직접 확인했습니다(evidence/brb-portfolio-link.jpg/.txt). 자기소개서·문서3종·수치·다른 작품은 변경하지 않았습니다. 새 BR-B Vercel URL은 아직 없어 연결하지 않았습니다.
+BR-A index.html의 13번 앱 카드 한 곳만 교체했습니다. 작품명·논문 기반 비치료적 설명·한계와 **확인한 새 Vercel 공개 앱 링크 https://br-b-meomureum.vercel.app/**를 연결했습니다. GitHub commit72765d3a46c5579ac145c84cfac93db063717d76. 기존 Vercel 자동배포가 반영된 공개 페이지에서 카드·링크를 직접 확인했습니다(evidence/brb-portfolio-link.jpg/.txt). 자기소개서·문서3종·수치·다른 작품은 변경하지 않았습니다. 후속 commit63ade697d588e375a7afa48b7b7a4bb8b623f2de에서 링크 주소만 Vercel로 변경했습니다. 공개 BR-A 페이지에서 링크 href가 새 Vercel 주소인 것을 직접 확인했습니다(evidence/brb-vercel-portfolio.txt/.jpg).
 
 BR-A 원본 README와 제출문에는 13번 앱 제작예정(2026-11-01)이라고 기록돼 있었고 저장소는 BR-B보다 먼저 공개되어 있었습니다. 과제 시스템의 BR-A 최종 제출·승인 상태에는 접근하지 못했습니다. 따라서 최종 확정을 확인했다고 말하지 않습니다. BR-B 완성 후 BR-A 최종 확정이라는 순서 조건이 있다면 제출·승인 이력을 사용자/평가자와 확인해야 합니다. 기존 10번 논문 카드 제목도 이번 제공 정식 제목과 달랐으나 다른 작품 보존 범위에 따라 건드리지 않았습니다.
 
@@ -89,16 +91,16 @@ BR-A 원본 README와 제출문에는 13번 앱 제작예정(2026-11-01)이라�
 
 실제 동료 한 사람의 사용 후기를 사용자가 제공했습니다. 추가 인터뷰·독립 재인터뷰·의학적 효과 검증을 수행한 것은 아닙니다.
 
-## C13 · 짧은 확인 방법 (기존 공개 앱 기준)
+## C13 · 짧은 확인 방법 (Vercel 공개 앱 기준)
 
-1. 위치: 위 기존 공개 앱 URL. 로그인 없이 두 공간과 “마음을 바꾸려 하지 않아도 괜찮아요.”를 봅니다. 새 연구 제목은 신규 소스에만 반영돼 새 배포를 기다립니다.
-2. 행동: 공간 카드의 8초 미리 듣기 → 공간 선택 후 호흡·5분·음성+자막으로 시작 → 설정에서 가이드 Off·공간 전환, 멈추기·재개 후 마무리를 누릅니다.
-3. 통과 모습: 미리 듣기 재생 표시와 종료, 세션 타이머·안내 자막, 전환해도 초기화되지 않는 시간, 중간 종료 문구. 정상 완료는 실제3분 추가 확인이 필요하며 1분 내 전체 완료 검사는 불가능합니다. 한국어 소리 청취는 평가자가 직접 확인합니다.
-4. 오류 모습: 소리 준비/재생 실패 시 오류 문구가 표시되고 세션이 멈추며 다시 듣기 또는 자막으로 계속을 제공합니다. 대표 오류 경로는 단위 검사 및 아래 추가 브라우저 실패 기록의 범위로만 확인했습니다.
+1. 위치: https://br-b-meomureum.vercel.app/ . 로그인 없이 두 공간과 메인 문구·논문 정식 제목·앱 대상/역할을 확인합니다.
+2. 행동: 카드의 8초 미리 듣기 → 공간 선택·호흡5분·음성+자막으로 시작 → 설정에서 가이드 Off·공간 변경, 일시정지·재개 후 중간 종료합니다.
+3. 통과 모습: 미리 듣기 재생 표시가 끝나고, 세션 타이머·자막이 표시되며, 공간 전환 전후 남은 시간이 유지되고 “여기에서 마무리해도 괜찮아요.”가 표시됩니다. 안내 파일 재생 로그도 확인했습니다. 정상 완료를1분 안에 시험할 수는 없으며 실제3분 세션이 필요합니다. 실제 한국어 음성과 자연음은 평가자가 직접 듣습니다.
+4. 오류 모습: 음원 누락 시 AMBIENT_LOAD 등 오류 안내가 표시됩니다. 실패 경로는 이전 로컬 재현으로 확인했으며 공개 배포에서는 파일을 일부러 삭제하지 않았습니다. 새 휴대폰·시크릿 확인은 별도로 남습니다.
 
 ## C14 · AI와 나의 판단 세 줄
 
-① AI에게 맡긴 일: 반응형 갤러리·포스터 애니메이션·9종 대본 시간표와 통일된 사전 한국어 안내 음원·자연음 편집·세션/오디오 충돌 방지 구현, 오류 진단·회귀 테스트·원본 확보·과제용 연구 소개·GitHub 반영·검증 문서 작성을 맡겼습니다(Vercel 배포는 권한 오류로 미완료).
+① AI에게 맡긴 일: 반응형 갤러리·포스터 애니메이션·9종 대본 시간표와 통일된 사전 한국어 안내 음원·자연음 편집·세션/오디오 충돌 방지 구현, 오류 진단·회귀 테스트·원본 확보·과제용 연구 소개·GitHub 반영·검증 문서 작성을 맡겼습니다(Vercel 최초 생성 요청403 이후 사용자가 제공한 공개 배포 주소를 검증).
 
 ② 내가 직접 판단한 일: 두 공간을 추상 예술과 밝은 제주 숲으로 나누고, 평면 도자기 대신 영상 중심 방향과 현재 포스터 애니메이션 대안을 선택했으며, 무로그인·무기록·무점수, 비판단적 안내 원칙을 결정하고 실제 휴대폰 음성과 물·도자기·새·미풍을 직접 듣고 수정 의견과 최종 승인 의견을 주었습니다.
 
@@ -114,20 +116,20 @@ BR-A 원본 README와 제출문에는 13번 앱 제작예정(2026-11-01)이라�
 |---|---|---|---|
 | BRB-C01 논문→앱 문장 | 충족 | 대상·역할·결과·한계 한 문장 | 본문 C01 |
 | BRB-C02 세 행동 | 부분 충족 | 로컬 UI 실행; 새 배포·실기기 청취 남음 | C02, evidence/ |
-| BRB-C03 첫 화면 | 부분 충족 | 소스·데스크톱 preview 수정 확인; 신규 공개 배포 남음 | dist/index.html, evidence/brb-home.jpg |
+| BRB-C03 첫 화면 | 충족 | Vercel 공개 홈에서 연구 제목·대상·한계 확인 | dist/index.html, evidence/brb-vercel-home.jpg |
 | BRB-C04 논문 적용 | 충족 | 연구 결과와 UX 선택 구분·연결표 | C04 |
 | BRB-C05 정상·비정상 | 부분 충족 | 단위19개 및 UI; 모바일·전체 청취·뒤로가기 등 남음 | C05, evidence/node-tests.txt |
 | BRB-C06 개인정보 | 충족 | 검사 범위에서 탐지 없음; 개인 임상자료 없음 | evidence/source-audit.json |
 | BRB-C07 사용 권리 | 충족 | 현재 배포 미디어 원문 재확인; 미사용 과거 음원 신규 제출 제외 | MEDIA_LICENSES.md, asset-manifest |
-| BRB-C08 공개 접근 | 부분 충족 | 원본 공개는 사용자 확인; 신규 Vercel 없음 | C08·15·22 |
+| BRB-C08 공개 접근 | 충족 | Vercel 일반 브라우저·익명 HTTP 접근 확인, 시크릿은 별도 | C08·15·22, evidence/vercel-http-assets.json |
 | BRB-C09 독립 폴더 실행 | 해당 없음 | 이번 제출은 URL·GitHub, 새 ZIP 미제출 | README 실행법 |
 | BRB-C10 BR-A 대표작 | 충족 | 기존 공개 앱 연결, 실제 BR-A 자동배포 확인 | C10, evidence/brb-portfolio-link.* |
 | BRB-C11 동료 후기 | 충족 | 익명 원문·사용자 제공 출처 명시 | C11 |
 | BRB-C12 비밀값 | 충족 | 패턴 검사·환경변수 없음, 한계 명시 | source-audit.json |
 | BRB-C13 확인법 | 충족 | 위치·행동·통과·오류 구분, 기존 URL 기준 | C13 |
 | BRB-C14 판단3줄 | 충족 | 맡김·직접판단·거절 이유 구분 | C14 |
-| BRB-C15 새 공개 검증 | 미검증 | 새 Vercel·새 시크릿·실기기 미실행 | C08·15·22 |
-| BRB-C22 GitHub/Vercel | 부분 충족 | GitHub 완료, Vercel403으로 미완료 | README, C08·15·22 |
+| BRB-C15 새 공개 검증 | 부분 충족 | Vercel 데스크톱·익명 HTTP 확인; 새 시크릿·실기기 미검증 | C08·15·22 |
+| BRB-C22 GitHub/Vercel | 충족 | 공개 GitHub와 Vercel 실행 파일·에셋 일치 확인 | README, evidence/vercel-http-assets.json |
 
 ## 수정 파일·전후 차이
 
@@ -146,12 +148,12 @@ BR-A 원본 README와 제출문에는 13번 앱 제작예정(2026-11-01)이라�
 
 ## 남은 일
 
-권한 있는 Vercel 계정에서 이 GitHub 저장소를 새 프로젝트로 Import → 성공한 실제 URL 확보 → 데스크톱/휴대폰·새 시크릿 무로그인 접근 → 한국어 음성과 자연음·자막·일시정지·공간 전환 청취 → 보고서의 미검증 상태 업데이트. BR-A 최종 확정·과제 순서는 과제 시스템 확인이 필요합니다. 완료하지 않은 항목을 완료로 표시하지 않습니다.
+새 Vercel URL에서 실제 휴대폰의 한국어 안내·자연음 청취와 새 Chrome 시크릿 창의 무로그인 접근을 확인한 뒤 남은 미검증 상태를 업데이트합니다. 데스크톱 UI·익명 파일 요청과 실제 휴대폰 청취를 혼동하지 않습니다. BR-A 최종 확정·과제 순서는 과제 시스템 확인이 필요합니다. 완료하지 않은 항목을 완료로 표시하지 않습니다.
 
 ## 추가 브라우저 실행 기록
 
 - 로컬 자연음 파일을 일시적으로 옮겨 404 상황을 만들고 새로고침한 페이지에서 숲을 선택했습니다. 비동기 로드 후 실제 alert “자연음 파일을 불러오지 못했습니다. [AMBIENT_LOAD]”와 status를 확인했습니다(evidence/brb-audio-failure.txt). 확인 직후 원본 파일을 복구했습니다. 배포 파일을 누락시킨 채 제출하지 않습니다.
-- 홈 reload 후 소리 활성화(Off)·기본 홈으로 초기화 확인. 세션 중 reload·back은 아직 미검증입니다.
+- 홈 reload 후 소리 활성화(Off)·기본 홈으로 초기화 확인. 이후 Vercel 세션 중 reload 및 back/forward를 실행해 문서 끝에 후속 기록을 추가했습니다.
 
 - 가이드 음성만 선택→Off→On을 실제 클릭해 음성만 모드로 복원됨을 확인했습니다. 자연음 슬라이더35→30%, 안내85→80%를 각각 키보드로 조작했습니다(evidence/brb-guide-volume.txt). 파일 재생 청취 판정은 별도입니다. 시작 dblclick 후 화면에는 단일 세션 타이머가 표시됐습니다.
 - GitHub 원본 기반 import commit: a63ec3f393fc311bf023a6bbac64d4184baf6e20. 이후 검증 문서만 추가로 커밋합니다.
@@ -159,3 +161,20 @@ BR-A 원본 README와 제출문에는 13번 앱 제작예정(2026-11-01)이라�
 - 음성만 모드 재개 후 breath-5-1 file-start(재개/프레임 위치 offset 약0.459초)→file-ended, 자막 비움, 자연음0.3·안내0.8, lastError:null을 실제 UI 진단에서 확인했습니다(evidence/brb-voice-only-diagnostics.txt). 기기 부하에 따른 미세한 시작 지연의 청감 검증은 별도입니다.
 
 - 좁은 화면 검증은 desktop Chrome 안의 375×812 CSS iframe입니다. iframe 내부 콘텐츠 폭360px, 문서 scrollWidth360px로 가로 넘침이 없었고, 첫 화면의 논문 제목·대상·한계와 한 열 갤러리, 설정의 세로 배치·5분 선택을 확인했습니다. 실제 휴대폰·터치·모바일 오디오 정책 검증으로 대체하지 않습니다. 검사용 iframe 페이지는 임시 QA 파일이며 신규 배포에 포함하지 않습니다.
+
+## Vercel 후속 실배포 검증 · 2026-11-02
+
+사용자가 제공한 실제 공개 주소 https://br-b-meomureum.vercel.app/ 에서 실행했습니다. 기존 로컬 테스트를 공개 배포 결과로 바꿔 부르는 것이 아니라 아래 조작을 다시 수행했습니다.
+
+| 행동 | 위치·실제 조작 | 기대·실제 결과 | 오류 여부·증거 |
+|---|---|---|---|
+| ① 두 공간 미리 듣기 | Vercel 홈 물결 클릭→종료 확인→숲 클릭→종료 확인 | 양쪽 재생 표시 및 aria-pressed true→false. 실제 도자기·새 accent-start 로그 | 오류표시 없음. evidence/brb-vercel-home.*, brb-vercel-diagnostics.txt |
+| ② 호흡5분·음성+자막 | Vercel 물결 기본 설정으로 시작 | 05:00·첫 자막, breath-5-0 file-start offset0 duration7.753초→file-ended. AudioContext running,lastError:null,preview:false | evidence/brb-vercel-session.jpg, brb-vercel-diagnostics.txt. 실제 사람이 들은 검증은 아님 |
+| ③ 설정·중간 종료 | 숲 전환·가이드 Off→닫기→pause/resume→마무리 | 공간 변경 전후04:48, pause/resume04:23 유지, 중간 종료 정확한 문구 | evidence/brb-vercel-world-switch.txt, brb-vercel-early.txt |
+| 정상 완료 추가 | 숲·호흡3분·자막만 실제 시작 후 시간 단축 없이 진행 | “잠시 머물렀던 시간을 그대로 두어도 괜찮아요.”·홈 버튼 | evidence/brb-vercel-complete.txt/.jpg |
+| 좁은 화면 추가 | 공개 Vercel 페이지를375×812 iframe으로 실제 로드·설정 선택 | 홈 연구 소개·한 열 갤러리 표시. 설정 콘텐츠 폭360/scrollWidth360, 가로 넘침 없음 | evidence/brb-vercel-mobile.*, brb-vercel-mobile-settings.txt. 실제 휴대폰 아님 |
+| 새로고침·이동 | 세션 중 reload, 이후 browser back→forward | 홈·소리 Off 초기화. back은 이전 문서 about:blank, forward는 공개 앱 홈 복귀 | evidence/brb-vercel-reload.txt, brb-vercel-history.txt |
+
+실행 파일·미디어는 쿠키·인증 헤더 없이 조회해85개 SHA256 일치를 확인했습니다. 비실행 dist/README.md만404입니다. Vercel에서 파일을 삭제하거나 앱 코드·디자인·음향을 바꾸지 않았습니다. 이 후속 변경은 배포 상태/제출 문서/증거 갱신과 BR-A 링크 주소 교체뿐입니다. 기존19개 단위 테스트 결과는 코드가 동일하므로 유지합니다.
+
+남은 직접 확인: 새 Vercel 주소의 실제 휴대폰 한국어 안내·자연음 청취, 새 Chrome 시크릿 창 접근. 손상 영상·실기기 다중 터치·9종 전체 장시간 청취는 기존 미검증 범위를 유지합니다. 과제 시스템의 BR-A 확정/순서 역시 별도입니다.
