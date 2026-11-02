@@ -1,0 +1,66 @@
+{
+  "inputHashes": {
+    "ceramic-clink-v041.mp3": "a4eb1fdc7b4c162716ebd11a452ded24af73d9d4d0e49550b1ec1632dd89a48d",
+    "water-lapping-v041.mp3": "3f02b04b05e9ef2fc100eb5c0c0e5a41bf08ab10828c89e85da0b52fef2a23a5"
+  },
+  "referenceAudioUsed": false,
+  "waterEvents": [
+    0.25,
+    3.06,
+    5.98,
+    8.71,
+    12.88,
+    15.65,
+    19.87,
+    23.61,
+    26.87,
+    30.25,
+    33.52,
+    37.81,
+    41.49,
+    45.65,
+    48.2,
+    50.77,
+    54.13,
+    57.33,
+    60.05
+  ],
+  "checks": [
+    {
+      "file": "porcelain-small-v043.mp3",
+      "duration": 1.8894104308390023,
+      "peak": 0.5044838786125183,
+      "rms": 0.02877109870314598
+    },
+    {
+      "file": "porcelain-middle-v043.mp3",
+      "duration": 1.8894104308390023,
+      "peak": 0.47985246777534485,
+      "rms": 0.030162863433361053
+    },
+    {
+      "file": "porcelain-large-v043.mp3",
+      "duration": 1.8894104308390023,
+      "peak": 0.45762091875076294,
+      "rms": 0.0281531922519207
+    },
+    {
+      "file": "porcelain-pair-v043.mp3",
+      "duration": 2.1694104308390023,
+      "peak": 0.34292417764663696,
+      "rms": 0.024145983159542084
+    },
+    {
+      "file": "water-porcelain-bed-v043.mp3",
+      "duration": 64.0,
+      "peak": 0.1260513961315155,
+      "rms": 0.008553383871912956
+    },
+    {
+      "file": "water-and-porcelain-review-v043.mp3",
+      "duration": 30.0,
+      "peak": 0.19097712635993958,
+      "rms": 0.006750012282282114
+    }
+  ]
+}

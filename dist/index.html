@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#f6f5f0" name="theme-color"/>
+<meta content="마음을 바꾸려 하지 않아도 괜찮아요. 자연의 소리와 함께, 아무것도 기록하지 않고 잠시 머무는 명상 공간." name="description"/>
+<link href="./assets/icon.svg" rel="icon" type="image/svg+xml"/>
+<link href="./assets/app-icon.png" rel="apple-touch-icon"/>
+<link href="./manifest.webmanifest" rel="manifest"/>
+<link href="./styles.css" rel="stylesheet"/>
+<title>머무름 — 마음을 바꾸려 하지 않아도 괜찮아요</title>
+</head>
+<body>
+<div id="app">
+<header class="site-header" id="siteHeader">
+<button aria-label="머무름 홈으로 이동" class="brand" id="goHome" type="button">
+<span aria-hidden="true" class="brand-mark"><svg viewbox="0 0 36 36"><circle cx="18" cy="18" fill="none" r="14" stroke="currentColor" stroke-width="1.2"></circle><path d="M8 19c5-5 11-5 19 0M10 23c5-3 10-3 16 0" fill="none" stroke="currentColor" stroke-width="1.2"></path></svg></span>
+<span>머무름 <small>M E O M U R E U M</small></span>
+</button>
+<div class="header-actions">
+<button aria-pressed="false" class="text-action" id="soundEnable" type="button"><span aria-hidden="true" class="sound-glyph">♪</span><span id="soundEnableText">소리 활성화</span></button>
+<button class="text-action about-link" id="openAbout" type="button">이 공간에 대해</button>
+</div>
+</header>
+<main aria-labelledby="homeTitle" class="screen screen-home" id="screen-home">
+<div class="home-intro">
+<p class="eyebrow">A QUIET PLACE TO BE</p>
+<h1 id="homeTitle">마음을 바꾸려 하지<br/>않아도 괜찮아요.</h1>
+<p class="intro-subtitle">자연의 소리와 짧은 안내 속에서, 잠시 머물다 가세요.</p>
+<p class="intro-detail">마음을 고치거나 통제하기보다, 지금의 호흡과 감각을 알아차리는 공간.</p>
+<div class="research-intro"><p class="research-title">과제 10 연구 · 「성인 범불안장애 치료 전후 뇌 기능적 연결성 변화: 공개 출판자료의 근거 종합과 요약통계 재분석」</p><p>일상에서 잠시 멈추고 싶은 사람이 자연의 소리와 짧은 안내로 비판단적 마음챙김을 경험하도록 돕습니다.</p><p class="research-limit">일부 연구의 연결성·불안 변화 연관성에서 출발했으며, 치료 간 차이와 이 앱의 치료 효과·뇌 변화는 확인되지 않았습니다.</p></div></div>
+<div class="gallery-section">
+<div class="gallery-heading"><span>01 — CHOOSE YOUR SPACE</span><span>오늘은 어떤 공간에 머물고 싶나요?</span></div>
+<div aria-label="명상 공간 선택" class="gallery" role="group">
+<article class="gallery-card" data-world="water">
+<div class="card-media">
+<div aria-hidden="true" class="scene scene-water"><img alt="" class="scene-poster" decoding="async" src="./assets/water-poster-aqua.webp"/><video aria-hidden="true" class="scene-video" data-world="water" loop="" muted="" playsinline="" poster="./assets/water-poster-aqua.webp" preload="none"></video></div>
+<span class="card-index">SPACE 01</span>
+<span aria-live="off" class="preview-indicator"><span class="preview-pulse"></span><span class="preview-label">8초 미리 듣기</span></span>
+<button aria-label="물결과 울림 공간 선택" class="card-select-overlay" data-action="choose" data-world="water" type="button"></button>
+<button aria-label="물결과 울림 소리 8초 미리 듣기" class="card-preview" data-action="preview" data-world="water" type="button"><span aria-hidden="true">♪</span> 소리 미리 듣기</button>
+<span class="asset-badge">포스터 애니메이션</span></div>
+<div class="card-meta"><div><p class="card-kicker">WATER &amp; RESONANCE</p><h2>물결과 울림</h2><p>고요한 수면 위, 우연히 피어나는 맑은 울림</p></div><span aria-hidden="true" class="card-arrow">↗</span></div>
+</article>
+<article class="gallery-card" data-world="forest">
+<div class="card-media">
+<div aria-hidden="true" class="scene scene-forest"><img alt="" class="scene-poster" decoding="async" src="./assets/forest-poster.webp"/><video aria-hidden="true" class="scene-video" data-world="forest" loop="" muted="" playsinline="" poster="./assets/forest-poster.webp" preload="none"></video><div class="morning-light"></div></div>
+<span class="card-index">SPACE 02</span>
+<span aria-live="off" class="preview-indicator"><span class="preview-pulse"></span><span class="preview-label">8초 미리 듣기</span></span>
+<button aria-label="숲의 숨결 제주 공간 선택" class="card-select-overlay" data-action="choose" data-world="forest" type="button"></button>
+<button aria-label="숲의 숨결 제주 소리 8초 미리 듣기" class="card-preview" data-action="preview" data-world="forest" type="button"><span aria-hidden="true">♪</span> 소리 미리 듣기</button>
+<span class="asset-badge">포스터 애니메이션</span></div>
+<div class="card-meta"><div><p class="card-kicker">BREATH OF JEJU</p><h2>숲의 숨결 — 제주</h2><p>비가 갠 아침, 나무 사이로 번지는 숲의 소리</p></div><span aria-hidden="true" class="card-arrow">↗</span></div>
+</article>
+</div>
+<p class="gallery-note">공간을 선택하면 명상 설정으로 이동합니다. <span id="hoverHint">소리를 활성화한 뒤 카드에 잠시 머물면 8초 미리 듣기가 시작됩니다.</span></p>
+<p class="purpose-note">명상과 뇌 기능 변화에 대한 관심에서 출발한 비치료적 보조 도구입니다. 의료적 치료를 대체하지 않습니다.</p></div>
+<footer class="home-footer"><span>로그인도, 기록도 없이. 필요한 순간에 잠시.</span><span>DESIGNED FOR A MOMENT OF STILLNESS</span></footer>
+</main>
+<main aria-labelledby="settingsTitle" class="screen screen-settings hidden" id="screen-settings">
+<div class="settings-shell">
+<button class="back-link" id="backGallery" type="button">← 두 공간으로 돌아가기</button>
+<section class="settings-cover world-water" id="settingsCover">
+<div class="cover-visual">
+<div aria-hidden="true" class="scene scene-water"><img alt="" class="scene-poster" decoding="async" src="./assets/water-poster-aqua.webp"/><video aria-hidden="true" class="scene-video" data-world="water" loop="" muted="" playsinline="" poster="./assets/water-poster-aqua.webp" preload="none"></video></div>
+<div aria-hidden="true" class="scene scene-forest"><img alt="" class="scene-poster" decoding="async" src="./assets/forest-poster.webp"/><video aria-hidden="true" class="scene-video" data-world="forest" loop="" muted="" playsinline="" poster="./assets/forest-poster.webp" preload="none"></video><div class="morning-light"></div></div>
+</div>
+<div class="cover-copy"><p class="eyebrow">YOUR SPACE</p><h1 id="settingsWorldName">물결과 울림</h1><p id="settingsWorldDesc">고요한 수면 위에서 잠시 머물러 봅니다.</p></div>
+</section>
+<div class="settings-space-change"><span>다른 공간에서 머물고 싶다면</span><button id="switchWorldInSettings" type="button">공간 바꾸기 ↔</button></div>
+<section aria-label="명상 설정" class="settings-form">
+<div class="settings-title-row"><div><p class="eyebrow">02 — YOUR SESSION</p><h2 id="settingsTitle">어떻게 머물고 싶나요?</h2></div><span class="quiet-note">공간과 가이드는 명상 중에도 바꿀 수 있어요.</span></div>
+<fieldset class="field-group"><legend>명상 프로그램</legend><div class="choice-list" id="practiceChoices">
+<button class="choice practice-choice selected" data-practice="breath" type="button"><span class="choice-icon">◌</span><span><strong>호흡 알아차리기</strong><small>호흡의 움직임을 바꾸지 않고 바라보기</small></span><span class="choice-dot"></span></button>
+<button class="choice practice-choice" data-practice="body" type="button"><span class="choice-icon">◎</span><span><strong>몸의 감각 살피기</strong><small>지금 몸에서 느껴지는 감각 살펴보기</small></span><span class="choice-dot"></span></button>
+<button class="choice practice-choice" data-practice="thought" type="button"><span class="choice-icon">☁</span><span><strong>떠오르는 생각 바라보기</strong><small>생각을 판단하지 않고 알아차리기</small></span><span class="choice-dot"></span></button>
+</div></fieldset>
+<div class="settings-two-col">
+<fieldset class="field-group"><legend class="sr-only">명상 시간</legend><div class="setting-field-head"><span aria-hidden="true" class="setting-field-title">명상 시간</span></div><div class="segment" id="durationChoices"><button data-duration="3" type="button">3분</button><button class="selected" data-duration="5" type="button">5분</button><button data-duration="10" type="button">10분</button></div><p class="setting-field-hint">잠시 머물 시간을 골라주세요.</p></fieldset>
+<fieldset class="field-group"><legend class="sr-only">명상 가이드</legend><div class="setting-field-head"><span aria-hidden="true" class="setting-field-title">명상 가이드</span><button aria-checked="true" class="guide-toggle" data-guide-toggle="" role="switch" type="button">가이드 켜짐</button></div><div class="segment" id="guideChoices"><button class="selected" data-guide="both" type="button">음성 + 자막</button><button data-guide="voice" type="button">음성만</button><button data-guide="text" type="button">자막만</button><button data-guide="off" type="button">끄기</button></div><p class="setting-field-hint">안내 없이 자연의 소리만 들어도 괜찮습니다.</p></fieldset>
+</div>
+<div class="settings-bottom"><div class="settings-helper"><button class="subtle-button" id="testVoice" type="button">한국어 음성 확인</button><span id="audioSourceStatus"></span></div><div class="prototype-note hidden audio-error" id="setupAudioError" role="alert"><span data-error-text=""></span></div><p class="settings-helper">안내 없이 소리만 들으며 머물러도 괜찮습니다.</p><p class="prototype-note">한국어 음성 확인 버튼으로 먼저 안내를 들어보세요. 모든 프로그램에 같은 목소리로 안내합니다. 기존보다 피치를 조금 낮췄으며, 변경한 음성의 실제 휴대폰 청취는 추가 확인이 필요합니다.</p><button class="primary-button" id="startSession" type="button">이 공간에서 시작하기 <span aria-hidden="true">↗</span></button></div>
+</section>
+</div>
+</main>
+<main aria-labelledby="sessionTitle" class="screen screen-session hidden world-water" id="screen-session">
+<div class="session-stage" id="sessionStage">
+<div aria-hidden="true" class="scene scene-water session-scene"><img alt="" class="scene-poster" decoding="async" src="./assets/water-poster-aqua.webp"/><video aria-hidden="true" class="scene-video" data-world="water" loop="" muted="" playsinline="" poster="./assets/water-poster-aqua.webp" preload="none"></video></div>
+<div aria-hidden="true" class="scene scene-forest session-scene"><img alt="" class="scene-poster" decoding="async" src="./assets/forest-poster.webp"/><video aria-hidden="true" class="scene-video" data-world="forest" loop="" muted="" playsinline="" poster="./assets/forest-poster.webp" preload="none"></video><div class="morning-light"></div></div>
+<div aria-hidden="true" class="stage-vignette"></div>
+<div class="session-top"><div><p class="session-flag">A MOMENT TO NOTICE</p><h1 id="sessionTitle">물결과 울림</h1><p class="session-practice" id="sessionPractice"></p></div><div aria-label="남은 시간" aria-live="off" class="time-display" id="timeDisplay" role="timer">05:00</div></div>
+<div class="session-caption-wrap"><p aria-live="polite" class="session-caption" id="sessionCaption"></p></div>
+<div class="session-controls" id="sessionControls"><button aria-label="일시정지" class="round-control" id="pauseResume" type="button"><span id="pauseIcon">Ⅱ</span><small>멈추기</small></button><button aria-label="소리 및 명상 설정" class="round-control" id="sessionOptionsBtn" type="button">⚙<small>설정</small></button><button aria-label="명상 마무리하기" class="round-control" id="sessionExitBtn" type="button">×<small>마무리</small></button></div>
+<button aria-label="명상 조작 메뉴 표시" class="show-controls-button" id="showControlsBtn" type="button">조작 메뉴</button>
+<span class="session-asset-note">포스터 애니메이션 · 자연음과 공명 사운드</span><div class="prototype-note hidden audio-error" id="sessionAudioError" role="alert"><span data-error-text=""></span><button class="subtle-button" id="retrySessionAudio" type="button">다시 듣기</button><button class="subtle-button" id="continueWithCaptions" type="button">자막으로 계속</button></div></div>
+<div aria-labelledby="pauseTitle" aria-modal="true" class="pause-overlay hidden" id="pauseOverlay" role="dialog"><div class="overlay-panel"><p class="eyebrow">A LITTLE PAUSE</p><h2 id="pauseTitle">잠시 멈추었습니다.</h2><p>준비되면 이 자리에서 이어가세요.</p><button class="primary-button" id="resumeFromOverlay" type="button">이어서 명상하기 →</button><button class="subtle-button" id="exitFromPause" type="button">여기서 마무리하기</button></div></div>
+<div aria-labelledby="optionsTitle" aria-modal="true" class="options-overlay hidden" id="optionsOverlay" role="dialog"><div class="options-panel"><div class="modal-header"><h2 id="optionsTitle">명상 설정</h2><button aria-label="설정 닫기" class="icon-close" id="closeOptions" type="button">×</button></div>
+<p class="field-label">자연 공간</p><div class="segment modal-segment" id="changeWorld"><button data-world-switch="water" type="button">물결과 울림</button><button data-world-switch="forest" type="button">숲의 숨결 — 제주</button></div>
+<p class="field-label">명상 가이드</p><div class="guide-label"><span>짧은 안내와 함께</span><button aria-checked="true" class="guide-toggle" data-guide-toggle="" role="switch" type="button">가이드 켜짐</button></div><div class="segment modal-segment" id="changeGuide"><button data-guide-in="both" type="button">음성 + 자막</button><button data-guide-in="voice" type="button">음성만</button><button data-guide-in="text" type="button">자막만</button><button data-guide-in="off" type="button">끄기</button></div>
+<label class="field-label" for="ambientVolume">자연음 음량 <span id="volumeLabel">35%</span></label><input id="ambientVolume" max="70" min="0" step="5" type="range" value="35"/><label class="field-label" for="voiceVolume">안내 음량 <span id="voiceVolumeLabel">85%</span></label><input id="voiceVolume" max="100" min="0" step="5" type="range" value="85"/>
+<label class="setting-check"><input id="motionToggle" type="checkbox"/> 화면 움직임 줄이기</label>
+<label class="setting-check"><input id="controlsToggle" type="checkbox"/> 조작 버튼 항상 표시</label>
+<p class="modal-note">변경해도 명상은 처음부터 다시 시작되지 않습니다.</p>
+<details class="modal-note" id="audioDiagnostics"><summary>오디오 오류 확인</summary><p>현재 탭의 재생 오류만 표시하며 저장하거나 전송하지 않습니다.</p><pre id="audioDiagnosticsText"></pre></details></div></div>
+<div aria-labelledby="exitTitle" aria-modal="true" class="exit-overlay hidden" id="exitOverlay" role="dialog"><div class="overlay-panel"><p class="eyebrow">YOUR OWN PACE</p><h2 id="exitTitle">여기에서 마무리할까요?</h2><p>지금 멈추어도 괜찮아요.</p><button class="primary-button" id="confirmExit" type="button">여기에서 마무리하기</button><button class="subtle-button" id="cancelExit" type="button">이어서 명상하기</button></div></div>
+</main>
+<main aria-labelledby="endTitle" class="screen screen-end hidden world-water" id="screen-end"><div class="end-background"><div aria-hidden="true" class="scene scene-water"><img alt="" class="scene-poster" decoding="async" src="./assets/water-poster-aqua.webp"/><video aria-hidden="true" class="scene-video" data-world="water" loop="" muted="" playsinline="" poster="./assets/water-poster-aqua.webp" preload="none"></video></div><div aria-hidden="true" class="scene scene-forest"><img alt="" class="scene-poster" decoding="async" src="./assets/forest-poster.webp"/><video aria-hidden="true" class="scene-video" data-world="forest" loop="" muted="" playsinline="" poster="./assets/forest-poster.webp" preload="none"></video><div class="morning-light"></div></div></div>
+<div class="end-content"><p class="eyebrow" id="endEyebrow">A MOMENT TO NOTICE</p><h1 id="endTitle">잠시 머물렀던 시간을<br/>그대로 두어도 괜찮아요.</h1><p id="endSub">지금의 마음을 잠깐 살펴보아도 좋습니다.</p><button class="end-home" id="endHome" type="button">홈으로 돌아가기 <span aria-hidden="true">↗</span></button></div>
+</main>
+<div aria-labelledby="aboutTitle" aria-modal="true" class="about-overlay hidden" id="aboutDialog" role="dialog"><div class="about-panel"><button aria-label="소개 닫기" class="icon-close about-close" id="closeAbout" type="button">×</button><p class="eyebrow">ABOUT THIS SPACE</p><h2 id="aboutTitle">아무것도 증명하거나 기록하지 않아도 괜찮은 공간.</h2><p>머무름은 호흡과 몸의 감각, 떠오르는 생각을 판단하지 않고 알아차리도록 돕는 비치료적 마음챙김 웹 앱입니다. 명상과 뇌 기능적 연결성에 관한 연구를 살펴보는 과정에서 시작되었습니다.</p><p>이 앱은 의료적 치료를 대신하거나 뇌의 변화를 측정하지 않습니다. 불편함이 느껴지면 언제든 명상을 중단해도 괜찮습니다.</p><div class="credits">에셋 안내 · 두 배경은 이 공간을 위해 만든 AI 콘셉트 포스터입니다. 제주 실제 촬영물이 아닙니다. 포스터를 웹 애니메이션으로 표현합니다. 물결과 울림은 셀레스트 부르시에-무주노의 ‘클리나멘’에서 영감을 받은 공간입니다. 앱 소리는 별도의 CC0 녹음으로 편집했습니다. 물결: <a href="https://opengameart.org/content/water-waves" target="_blank" rel="noopener">Water Waves · transitking</a>, CC0 (EQ·음량·루프·간격 재편집). 숲·새: <a href="https://freesound.org/people/Prauchi/sounds/835724/" target="_blank" rel="noopener">Summer_evening_Sweden · Prauchi</a>, CC0 (교통 소음이 없는 것으로 소개된 스웨덴의 나무 바람·노래하는 새 녹음, 구간·EQ·루프 편집). 미세한 곤충층: <a href="https://freesound.org/people/PrincessGrace/sounds/329371/" target="_blank" rel="noopener">Summer Ambiance · PrincessGrace</a>, CC0 (교통 소음이 없는 것으로 소개된 시골 녹음에서 고역 곤충 질감 추출). 실제 제주 현장 녹음은 아닙니다. 도자기: <a href="https://freesound.org/people/kikuchiyo/sounds/214186/" target="_blank" rel="noopener">ceramicCups2 · kikuchiyo</a>, CC0 (도자기 접촉 녹음 가공 + 자체 제작한 낮은 합성 공명, 충격음·고역 감쇠 및 잔향 편집). <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 사용 조건</a>.</div><p class="note-small">명상 이력과 마음 상태를 수집하거나 저장하지 않습니다. 3개 프로그램의 3·5·10분 안내를 같은 한국어 목소리로 사전 제작했습니다. 이전 호흡 5분의 휴대폰 정상 재생은 사용자 확인을 받았습니다. 피치를 조금 낮춘 이번 전체 음성은 실제 청취 확인이 필요합니다.</p></div></div>
+</div>
+<div aria-live="polite" class="sr-only" id="liveStatus" role="status"></div>
+<script src="./app.js" type="module"></script>
+</body>
+</html>

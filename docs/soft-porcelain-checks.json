@@ -1,0 +1,40 @@
+{
+  "waterSha256": "67e7f3288a553381a36392d4f9d171d0592c3e0d0fb3c1b2c2f275468d78a263",
+  "oldMiddle": {
+    "duration": 1.8894104308390023,
+    "peak": 0.47985246777534485,
+    "rms": 0.030162863433361053,
+    "above2kEnergyFraction": 0.6841554045677185
+  },
+  "referenceAudioUsed": false,
+  "checks": [
+    {
+      "file": "porcelain-soft-low-v044.mp3",
+      "duration": 2.8307709750566894,
+      "peak": 0.25220176577568054,
+      "rms": 0.05932914838194847,
+      "above2kEnergyFraction": 3.1273430067813024e-06
+    },
+    {
+      "file": "porcelain-soft-middle-v044.mp3",
+      "duration": 2.8307709750566894,
+      "peak": 0.2522030472755432,
+      "rms": 0.06298228353261948,
+      "above2kEnergyFraction": 3.6665228435595054e-06
+    },
+    {
+      "file": "porcelain-soft-high-v044.mp3",
+      "duration": 2.8307709750566894,
+      "peak": 0.25221967697143555,
+      "rms": 0.0631248950958252,
+      "above2kEnergyFraction": 4.843029273615684e-06
+    },
+    {
+      "file": "water-and-soft-porcelain-review-v044.mp3",
+      "duration": 30.0,
+      "peak": 0.058640312403440475,
+      "rms": 0.007302126847207546,
+      "above2kEnergyFraction": 0.007111131679266691
+    }
+  ]
+}

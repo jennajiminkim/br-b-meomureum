@@ -1,0 +1,31 @@
+
+> meomureum-web@0.4.5 test
+> node --test tests/*.test.mjs
+
+✔ forest songs and ceramic contacts keep restrained bounded spacing (1.794307ms)
+✔ forest preview has one representative bird; water has two ceramic contacts (1.941359ms)
+✔ an active accent cannot be layered by a second call, and can play again after ending (0.640476ms)
+✔ water cycles through a recording bank without immediate repeat and only one active accent (0.822981ms)
+✔ recording loader decodes every water bank entry as a file path and caches the result (2.062221ms)
+✔ user-approved water recording stays byte-identical (9.80325ms)
+✔ all 9 programs end once, with intentional silent intervals and one common anchor (2.714986ms)
+✔ pauses exclude elapsed time; switching scene cannot restart the clock (0.31139ms)
+✔ ending while audio unlock is pending cannot start orphaned playback (0.663211ms)
+✔ rapid scene switches accept only the latest asynchronous result (0.672394ms)
+✔ preview cancellation while unlocking cannot leak sound into setup (0.654227ms)
+✔ 8 second preview schedules representative accent and ends cleanly (2.539642ms)
+✔ forest-only revision preserves approved water, porcelain and narration (11.432678ms)
+✔ all 9 guides have the same voice and pitch, real local files, and measured caption lengths (4.325626ms)
+✔ unavailable narration is visible and cannot fall back to a different device voice (1.355495ms)
+✔ prerecorded resume seeks within same cue and stop removes the old source (1.853517ms)
+✔ cancel while file load is pending prevents orphaned narration (0.470379ms)
+✔ failed file load exposes failure instead of silently moving on (0.566785ms)
+✔ default browser fetch keeps its host receiver when called by the engine (3.214064ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 207.782134

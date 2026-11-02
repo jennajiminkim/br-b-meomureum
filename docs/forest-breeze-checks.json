@@ -1,0 +1,50 @@
+{
+  "sources": {
+    "songforest.mp3": "3ce5430be5dd1f872b741f701585b226a448e83e9199e1f29b42a675d64677d3",
+    "summer-insects.mp3": "3653fb8ee5c5ddd70f2099ee64d6a170774f602b5cb35dc8bb87abcc94dd0087"
+  },
+  "breezeStart": 33.0,
+  "insectStart": 34.0,
+  "birdPhrases": [
+    5.5,
+    51.5,
+    31.75
+  ],
+  "birdReferenceRms": 0.020474493503570557,
+  "birdGain": 0.6825000000000001,
+  "insectBaseGain": 0.07,
+  "insectGain": 0.07350000000000001,
+  "detailIncreaseFactor": 1.05,
+  "checks": [
+    {
+      "file": "forest-breeze-bed-v045.mp3",
+      "duration": 46.5,
+      "peak": 0.09667660295963287,
+      "rms": 0.007715442683547735
+    },
+    {
+      "file": "forest-songbird-1-v045.mp3",
+      "duration": 2.6,
+      "peak": 0.11535543203353882,
+      "rms": 0.019857415929436684
+    },
+    {
+      "file": "forest-songbird-2-v045.mp3",
+      "duration": 2.6,
+      "peak": 0.14652061462402344,
+      "rms": 0.0165312048047781
+    },
+    {
+      "file": "forest-songbird-3-v045.mp3",
+      "duration": 2.6,
+      "peak": 0.14379523694515228,
+      "rms": 0.018170243129134178
+    },
+    {
+      "file": "forest-breeze-songbirds-review-v045.mp3",
+      "duration": 30.0,
+      "peak": 0.046755265444517136,
+      "rms": 0.003547492204234004
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+<linearGradient id="bg" x2=".3" y2="1"><stop stop-color="#bbc9ad"/><stop offset=".38" stop-color="#6e8e78"/><stop offset="1" stop-color="#1a3d2c"/></linearGradient>
+<linearGradient id="trunk"><stop stop-color="#152e22"/><stop offset=".33" stop-color="#536351"/><stop offset=".67" stop-color="#344d3c"/><stop offset="1" stop-color="#112b23"/></linearGradient>
+<radialGradient id="sun"><stop stop-color="#eaf0c8" stop-opacity=".8"/><stop offset="1" stop-color="#eaf0c8" stop-opacity="0"/></radialGradient>
+<linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#667c50"/><stop offset="1" stop-color="#15321f"/></linearGradient>
+<filter id="fog"><feGaussianBlur stdDeviation="24"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<ellipse cx="1060" cy="180" rx="700" ry="560" fill="url(#sun)"/>
+<g opacity=".29" stroke="#335743"><path d="M45 0l20 1000M201 0l-10 1000M369 0l-20 1000M522 0l30 1000M705 0l0 1000M895 0l-45 1000M1050 0l40 1000M1280 0l-15 1000M1449 0l38 1000" stroke-width="41"/></g>
+<path d="M0 755Q340 690 770 740T1600 700V1000H0Z" fill="url(#floor)"/>
+<g opacity=".67"><rect x="125" y="-50" width="80" height="1120" fill="url(#trunk)"/><rect x="410" y="-60" width="62" height="1120" fill="url(#trunk)"/><rect x="875" y="-60" width="54" height="1120" fill="url(#trunk)"/><rect x="1310" y="-50" width="85" height="1120" fill="url(#trunk)"/></g>
+<g fill="#294f32" opacity=".84"><path d="M0 910Q110 600 230 901Q280 640 400 900Q520 680 610 920Q720 660 825 935Q930 700 1070 918Q1180 660 1290 910Q1450 660 1600 910V1000H0Z"/><path d="M0 870Q100 740 240 900Q310 770 470 945Q530 780 700 915Q860 730 1030 945Q1170 760 1350 930Q1490 730 1600 850V1000H0Z" fill="#3e6b43"/></g>
+<g opacity=".28" filter="url(#fog)"><ellipse cx="790" cy="510" rx="800" ry="155" fill="#d8dfc5"/><ellipse cx="1160" cy="320" rx="450" ry="85" fill="#dfe9d6"/></g>
+<g stroke="#305b36" stroke-width="5" fill="none" opacity=".75"><path d="M30 1000Q50 800 110 740M110 1000Q250 780 340 790M350 1010Q450 780 550 745M510 1000Q600 780 710 790M1070 1000Q1140 810 1240 790M1330 1000Q1410 770 1560 740"/></g>
+</svg>
