@@ -128,7 +128,7 @@ BR-A 원본 README와 제출문에는 13번 앱 제작예정(2026-11-01)이라�
 | BRB-C12 비밀값 | 충족 | 패턴 검사·환경변수 없음, 한계 명시 | source-audit.json |
 | BRB-C13 확인법 | 충족 | 위치·행동·통과·오류 구분, 기존 URL 기준 | C13 |
 | BRB-C14 판단3줄 | 충족 | 맡김·직접판단·거절 이유 구분 | C14 |
-| BRB-C15 새 공개 검증 | 충족 | Vercel 데스크톱·익명 HTTP 및 사용자 직접 시크릿 실행·휴대폰 청취 확인 | C08·15·22, 사용자 확인 추가 |
+| BRB-C15 새 공개 검증 | 충족 | Vercel 데스크톱·익명 HTTP 및 사용자 직접 시크릿 실행·휴대폰 청취 확인 | Chrome 새 시크릿 창에서 Vercel 공개 URL에 로그인·인증 없이 접속하여 머무름 홈 화면이 정상 표시됨을 확인했습니다. 증거: docs/evidence/brb-vercel-incognito.png. |
 | BRB-C22 GitHub/Vercel | 충족 | 공개 GitHub와 Vercel 실행 파일·에셋 일치 확인 | README, evidence/vercel-http-assets.json |
 
 ## 수정 파일·전후 차이
