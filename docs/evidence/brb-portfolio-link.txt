@@ -1,0 +1,12 @@
+  - heading "대표작" [level=2]
+  - heading "10번 과제 · 첫 논문" [level=3]
+  - paragraph: "명상 기반 중재와 항우울제 치료 전후의 뇌 기능적 연결성 변화 비교: 불안장애 환자를 중심으로"
+  - paragraph: 최종 논문 · PDF 33쪽
+  - link "논문 PDF 열람":
+    - /url: site/docs/manuscript.pdf
+    - generic: 논문 PDF 열람
+  - heading "머무름(MEOMUREUM)" [level=3]
+  - paragraph: 과제 10의 근거 종합에서 출발해, 자연의 소리와 짧은 안내로 비판단적 마음챙김을 경험하는 보조 웹 앱입니다.
+  - paragraph: 논문의 치료 간 연결성 차이는 확정되지 않았으며, 앱 자체의 치료 효과와 뇌 변화는 검증되지 않았습니다.
+  - link "머무름 공개 앱 열기 ↗":
+    - /url: https://meomureum-quiet-space-jimin.jimn2xo.chatgpt.site/

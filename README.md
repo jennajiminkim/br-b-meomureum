@@ -1,3 +1,37 @@
+# 머무름 / MEOMUREUM · BR-B
+
+마음을 바꾸려 하지 않아도 괜찮아요.
+
+- 기존 공개 앱: https://meomureum-quiet-space-jimin.jimn2xo.chatgpt.site/
+- GitHub: https://github.com/jennajiminkim/br-b-meomureum
+- 새 Vercel URL: **아직 없음 — 연결된 계정에서 프로젝트 생성 403으로 배포 미완료.**
+- [최종 검증·평가표·제출문](docs/BRB_REPORT.md)
+- [미디어 출처와 사용 조건](docs/MEDIA_LICENSES.md)
+
+## 원본과 이번 변경
+
+원본 Work/Sites 소스 저장소의 승인 버전 v0.4.5, commit fe770552e44e3cf60aa637e70876555317840bb7에서 확보했습니다. 공개 웹페이지를 복제해 재구성한 앱이 아닙니다. 정적 HTML/CSS/JavaScript ES module이며 React/Vite·서버·로그인·기록 저장이 없습니다. 포스터와 음원은 로컬 파일입니다. 기존 디자인·애니메이션·대본·승인 음향·세션 엔진은 유지하고 홈에 연구 제목·대상·한계만 추가했습니다. 원본 ChatGPT 사이트와 원본 저장소의 배포 버전은 변경하지 않았습니다. 신규 제출 저장소에서는 현재 사용하지 않는 과거 음원과 검토 믹스만 제외했습니다.
+
+## 실행과 검사
+
+```sh
+python3 -m http.server 8000 --directory dist
+```
+
+http://localhost:8000 에 접속합니다. HTML 더블클릭(file://) 대신 HTTP로 실행하세요. Node 20 이상에서 `npm test`, Python/ffmpeg가 있으면 `python3 tools/audit_brb.py`로 파일·비밀값 패턴·음원 디코딩 검사를 재현할 수 있습니다. 설치나 빌드는 필요하지 않습니다. 앱 실행에 필요한 환경변수·API 키·DB는 없습니다. tools/audio의 개발용 재생성 스크립트는 별도 모델·원본 음원·ffmpeg가 필요하며 일상 실행이나 배포에는 필요하지 않습니다.
+
+## Vercel Import 설정
+
+GitHub `jennajiminkim/br-b-meomureum` → main을 Import합니다. Root Directory: 저장소 루트, Framework Preset: Other, Build Command: 비움, Install Command: 비움, Output Directory: dist. 같은 내용이 vercel.json에 있습니다. 기존 BR-A 프로젝트를 선택하거나 덮어쓰지 않습니다. 생성 권한이 있는 실제 계정에서 새 프로젝트로 Import해야 합니다. 배포 성공 후 반환된 실제 URL을 문서·대표작에 반영하고 새 시크릿 창 및 휴대폰 검증을 해야 합니다.
+
+## 현재 검증의 한계
+
+로컬 cloud Chrome의 UI·오디오 이벤트와 Node 테스트를 실제 실행했습니다. 실제 휴대폰 청취나 새 Vercel 주소, 새 시크릿 창 검증을 대신 통과로 표시하지 않습니다. 사용자 제공 이전 5분 한국어 음성 정상 재생 및 최종 자연음 승인 의견은 별도 사용자 증거입니다. [상세 결과](docs/BRB_REPORT.md).
+
+---
+
+## 이전 개발 메모 (버전별 기록)
+
 > 현재: v0.4.5. 숲 배경을 교통 소음이 없다고 소개된 미풍·노래하는 새 녹음으로 교체하고, 새·미세한 곤충층을 약5% 보강했습니다. 물결·도자기와 안내 음성은 그대로입니다. [변경·출처·검증](docs/FOREST_BREEZE.md). 실제 휴대폰 최종 청취는 추가 확인이 필요합니다.
 
 # 머무름 / MEOMUREUM · Web v0.3

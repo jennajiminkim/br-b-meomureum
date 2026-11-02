@@ -1,0 +1,56 @@
+[
+  {
+    "p": "breath",
+    "m": "3",
+    "practice": "true",
+    "duration": "true"
+  },
+  {
+    "p": "breath",
+    "m": "5",
+    "practice": "true",
+    "duration": "true"
+  },
+  {
+    "p": "breath",
+    "m": "10",
+    "practice": "true",
+    "duration": "true"
+  },
+  {
+    "p": "body",
+    "m": "3",
+    "practice": "true",
+    "duration": "true"
+  },
+  {
+    "p": "body",
+    "m": "5",
+    "practice": "true",
+    "duration": "true"
+  },
+  {
+    "p": "body",
+    "m": "10",
+    "practice": "true",
+    "duration": "true"
+  },
+  {
+    "p": "thought",
+    "m": "3",
+    "practice": "true",
+    "duration": "true"
+  },
+  {
+    "p": "thought",
+    "m": "5",
+    "practice": "true",
+    "duration": "true"
+  },
+  {
+    "p": "thought",
+    "m": "10",
+    "practice": "true",
+    "duration": "true"
+  }
+]

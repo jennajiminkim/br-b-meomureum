@@ -1,0 +1,12 @@
+{
+  "scope": "current source files, not external Git history or audio semantic content",
+  "text_files": 64,
+  "asset_files": 72,
+  "findings_without_values": [],
+  "missing_or_decode_errors": [],
+  "env_files": [],
+  "limitations": [
+    "Pattern scan cannot prove absence of all secrets or identify voices/people in field recordings.",
+    "No individual clinical data; paper interpretation based on user-supplied summary, not full manuscript review."
+  ]
+}

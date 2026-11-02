@@ -1,0 +1,56 @@
+- paragraph: QA · 375 × 812 CSS viewport · 실제 휴대폰 아님
+- iframe [active]:
+  - banner:
+    - button "머무름 홈으로 이동":
+      - text: 머무름
+      - generic: M E O M U R E U M
+    - button "이 공간에 대해"
+  - main "어떻게 머물고 싶나요?":
+    - button "← 두 공간으로 돌아가기"
+    - paragraph: YOUR SPACE
+    - heading "물결과 울림" [level=1]
+    - paragraph: 맑은 청록빛 수면 위, 하얀 도자기에 잠시 시선을 둡니다.
+    - generic: 다른 공간에서 머물고 싶다면
+    - button "공간 바꾸기 ↔"
+    - region "명상 설정":
+      - paragraph: 02 — YOUR SESSION
+      - heading "어떻게 머물고 싶나요?" [level=2]
+      - generic: 공간과 가이드는 명상 중에도 바꿀 수 있어요.
+      - group "명상 프로그램":
+        - generic: 명상 프로그램
+        - button "◌ 호흡 알아차리기 호흡의 움직임을 바꾸지 않고 바라보기" [pressed]:
+          - generic: ◌
+          - strong: 호흡 알아차리기
+          - generic: 호흡의 움직임을 바꾸지 않고 바라보기
+        - button "◎ 몸의 감각 살피기 지금 몸에서 느껴지는 감각 살펴보기":
+          - generic: ◎
+          - strong: 몸의 감각 살피기
+          - generic: 지금 몸에서 느껴지는 감각 살펴보기
+        - button "☁ 떠오르는 생각 바라보기 생각을 판단하지 않고 알아차리기":
+          - generic: ☁
+          - strong: 떠오르는 생각 바라보기
+          - generic: 생각을 판단하지 않고 알아차리기
+      - group "명상 시간":
+        - generic: 명상 시간
+        - generic: 명상 시간
+        - button "3분"
+        - button "5분" [active] [pressed]
+        - button "10분"
+        - paragraph: 잠시 머물 시간을 골라주세요.
+      - group "명상 가이드":
+        - generic: 명상 가이드
+        - generic: 명상 가이드
+        - switch "가이드 켜짐" [checked]
+        - button "음성 + 자막" [pressed]
+        - button "음성만"
+        - button "자막만"
+        - button "끄기"
+        - paragraph: 안내 없이 자연의 소리만 들어도 괜찮습니다.
+      - button "한국어 음성 확인"
+      - text: 모든 프로그램에 동일한 한국어 안내 목소리
+      - paragraph: 안내 없이 소리만 들으며 머물러도 괜찮습니다.
+      - paragraph: 한국어 음성 확인 버튼으로 먼저 안내를 들어보세요. 모든 프로그램에 같은 목소리로 안내합니다. 기존보다 피치를 조금 낮췄으며, 변경한 음성의 실제 휴대폰 청취는 추가 확인이 필요합니다.
+      - button "이 공간에서 시작하기":
+        - text: 이 공간에서 시작하기
+        - generic: ↗
+  - status

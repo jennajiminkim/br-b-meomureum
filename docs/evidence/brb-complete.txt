@@ -1,0 +1,8 @@
+- main "잠시 머물렀던 시간을 그대로 두어도 괜찮아요.":
+  - paragraph: A MOMENT TO BE
+  - heading "잠시 머물렀던 시간을 그대로 두어도 괜찮아요." [active] [level=1]
+  - paragraph: 지금의 마음을 잠깐 살펴보아도 좋습니다.
+  - button "홈으로 돌아가기":
+    - text: 홈으로 돌아가기
+    - generic: ↗
+- status

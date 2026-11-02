@@ -1,0 +1,45 @@
+- main "물결과 울림":
+  - paragraph: A MOMENT TO NOTICE
+  - heading "물결과 울림" [level=1]
+  - paragraph: 호흡 알아차리기
+  - timer "남은 시간": 04:45
+  - paragraph
+  - button "일시정지":
+    - generic: Ⅱ
+    - generic: 멈추기
+  - button "소리 및 명상 설정":
+    - text: ⚙
+    - generic: 설정
+  - button "명상 마무리하기":
+    - text: ×
+    - generic: 마무리
+  - button "명상 조작 메뉴 표시": 조작 메뉴
+  - generic: 포스터 애니메이션 · 자연음과 공명 사운드
+  - dialog "명상 설정":
+    - heading "명상 설정" [level=2]
+    - button "설정 닫기": ×
+    - paragraph: 자연 공간
+    - button "물결과 울림" [pressed]
+    - button "숲의 숨결 — 제주"
+    - paragraph: 명상 가이드
+    - generic: 짧은 안내와 함께
+    - switch "가이드 켜짐" [checked] [active]
+    - button "음성 + 자막"
+    - button "음성만" [pressed]
+    - button "자막만"
+    - button "끄기"
+    - text: 자연음 음량
+    - generic: 30%
+    - slider "자연음 음량 30%": "30"
+    - text: 안내 음량
+    - generic: 80%
+    - slider "안내 음량 80%": "80"
+    - checkbox "화면 움직임 줄이기"
+    - text: 화면 움직임 줄이기
+    - checkbox "조작 버튼 항상 표시"
+    - text: 조작 버튼 항상 표시
+    - paragraph: 변경해도 명상은 처음부터 다시 시작되지 않습니다.
+    - generic "오디오 오류 확인"
+    - paragraph: 현재 탭의 재생 오류만 표시하며 저장하거나 전송하지 않습니다.
+    - generic: "{ \"lastError\": null, \"context\": \"running\", \"natural\": { \"world\": \"water\", \"preview\": false, \"session\": true, \"paused\": true, \"ambientVolume\": 0.35, \"duck\": 1, \"events\": [ { \"event\": \"context-state\", \"state\": \"running\" }, { \"event\": \"accent-start\", \"world\": \"water\", \"path\": \"./assets/audio/porcelain-soft-high-v044.mp3\" }, { \"event\": \"accent-start\", \"world\": \"water\", \"path\": \"./assets/audio/porcelain-soft-low-v044.mp3\" } ] }, \"narration\": { \"session\": \"breath-5\", \"source\": \"recorded\", \"voiceId\": \"meomureum-kr-v042\", \"pitchSemitones\": -0.6, \"active\": false, \"volume\": 0.85, \"events\": [ { \"event\": \"file-start\", \"cue\": \"breath-5-0\", \"offset\": 0, \"duration\": 7.753015873015873 }, { \"event\": \"file-ended\", \"cue\": \"breath-5-0\" } ] } }"
+- status
