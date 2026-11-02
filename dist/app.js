@@ -5,7 +5,7 @@ import {SceneMedia} from './media.js';
 import {NarrationEngine} from './narration.js';
 const $=id=>document.getElementById(id),audio=new SoundEngine({report:showAudioIssue}),clock=new SessionClock(),media=new SceneMedia();
 const WORLD={water:{name:'물결과 울림',description:'맑은 청록빛 수면 위, 하얀 도자기에 잠시 시선을 둡니다.'},forest:{name:'숲의 숨결 — 제주',description:'비가 갠 아침, 나무 사이로 따뜻한 빛이 스며듭니다.'}};
-const state={screen:'home',world:'water',practice:'breath',duration:5,guide:'both',guideMode:'both',soundEnabled:false,preview:null,volume:.35,voiceVolume:.85,audioProblem:false,modal:null,reduced:matchMedia('(prefers-reduced-motion: reduce)').matches,controlsAlways:false};
+const state={screen:'home',world:'water',practice:'breath',duration:5,guide:'both',guideMode:'both',soundEnabled:false,preview:null,volume:.70,voiceVolume:.85,audioProblem:false,modal:null,reduced:matchMedia('(prefers-reduced-motion: reduce)').matches,controlsAlways:false};
 let frame=0,hoverTimer=0,previewToken=0,startToken=0,hideTimer=0,cues=[],lastCue=null,pausedBeforeDialog=false,focusReturn=null;
 function announce(text){$('liveStatus').textContent=text;}
 function syncMedia(){media.sync(state.screen,state.world,clock.status!=='running'&&state.screen==='session',state.reduced);}

@@ -2,7 +2,7 @@ import {ASSETS} from './assets.js';
 import {AUDIO_MIX,nextAccentDelay} from './audio-mix.js';
 /** Decoded field-recording beds and isolated accent buses. No noise fallback. */
 export class SoundEngine {
-  constructor({report=()=>{}}={}){this.report=report;this.events=[];this.retiring=new Set();this.ctx=null;this.session=null;this.preview=null;this.sessionWorld='water';this.volume=.35;this.paused=false;this.nextEventAt=0;this.recentEventAt=-999;this.ambientTimeouts=[];this.generation=0;this.previewGeneration=0;this.duckLevel=1;this.buffers=new Map();}
+  constructor({report=()=>{}}={}){this.report=report;this.events=[];this.retiring=new Set();this.ctx=null;this.session=null;this.preview=null;this.sessionWorld='water';this.volume=.70;this.paused=false;this.nextEventAt=0;this.recentEventAt=-999;this.ambientTimeouts=[];this.generation=0;this.previewGeneration=0;this.duckLevel=1;this.buffers=new Map();}
   ensureContext(){
     if(!this.ctx){const Context=window.AudioContext||window.webkitAudioContext;if(!Context)throw new Error('Web Audio 미지원');this.ctx=new Context();this.ctx.onstatechange=()=>{this.events.push({event:'context-state',state:this.ctx.state});if(this.events.length>15)this.events.shift();if(this.session&&this.ctx.state!=='running'&&!this.paused)this.report({code:'AUDIO_CONTEXT_'+this.ctx.state,message:'오디오가 일시 중단되었습니다. 다시 듣기를 눌러 주세요.'});};}return this.ctx;
   }
@@ -32,7 +32,7 @@ export class SoundEngine {
     amb.timeouts=[setTimeout(()=>{if(this.preview===amb)this.accent(world,amb,true);},1700),setTimeout(()=>{if(this.preview===amb&&world==='water'){this.accent(world,amb,false);}},5200),setTimeout(()=>{if(this.preview===amb){this.stopPreview();onEnd?.();}},8000)];
   }
   stopPreview(){this.previewGeneration++;if(!this.preview)return;for(const id of this.preview.timeouts||[])clearTimeout(id);this.fadeStop(this.preview,.2);this.preview=null;}
-  async startSession(world,volume=.35,elapsed=0){
+  async startSession(world,volume=.70,elapsed=0){
     this.stopPreview();this.stopSession();const token=this.generation;this.volume=volume;this.paused=false;this.duckLevel=1;
     await this.unlock();await this.loadRecordings(world);if(token!==this.generation)return;
     this.sessionWorld=world;this.session=this.makeAmbient(world,this.paused?0:volume*this.duckLevel);this.nextEventAt=elapsed+nextAccentDelay(world,true);

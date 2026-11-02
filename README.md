@@ -12,6 +12,10 @@
 
 원본 Work/Sites 소스 저장소의 승인 버전 v0.4.5, commit fe770552e44e3cf60aa637e70876555317840bb7에서 확보했습니다. 공개 웹페이지를 복제해 재구성한 앱이 아닙니다. 정적 HTML/CSS/JavaScript ES module이며 React/Vite·서버·로그인·기록 저장이 없습니다. 포스터와 음원은 로컬 파일입니다. 기존 디자인·애니메이션·대본·승인 음향·세션 엔진은 유지하고 홈에 연구 제목·대상·한계만 추가했습니다. 원본 ChatGPT 사이트와 원본 저장소의 배포 버전은 변경하지 않았습니다. 신규 제출 저장소에서는 현재 사용하지 않는 과거 음원과 검토 믹스만 제외했습니다.
 
+## 자연음 기본 음량
+
+세션의 자연음은 기본70%, 안내 음성은85%입니다. 자연음은 설정에서0~70%로 조절할 수 있습니다. 같은 탭에서 조절한 값은 유지하고 새 접속/새로고침 시70%로 시작합니다. 홈 미리 듣기는 기존 음량을 유지합니다.
+
 ## 실행과 검사
 
 ```sh
@@ -22,11 +26,11 @@ http://localhost:8000 에 접속합니다. HTML 더블클릭(file://) 대신 HTT
 
 ## Vercel Import 설정
 
-GitHub `jennajiminkim/br-b-meomureum` → main을 Import합니다. Root Directory: 저장소 루트, Framework Preset: Other, Build Command: 비움, Install Command: 비움, Output Directory: dist. 같은 내용이 vercel.json에 있습니다. 기존 BR-A 프로젝트를 선택하거나 덮어쓰지 않습니다. 이 설정으로 재현할 수 있으며 현재 제공된 공개 주소의 배포를 확인했습니다. BR-A 대표작과 문서의 주소도 갱신했습니다. Vercel 대시보드 Git 연결 상태는 이번 API 권한으로 확인하지 못했습니다. 새 시크릿 창 및 실제 휴대폰 검증은 남았습니다.
+GitHub `jennajiminkim/br-b-meomureum` → main을 Import합니다. Root Directory: 저장소 루트, Framework Preset: Other, Build Command: 비움, Install Command: 비움, Output Directory: dist. 같은 내용이 vercel.json에 있습니다. 기존 BR-A 프로젝트를 선택하거나 덮어쓰지 않습니다. 이 설정으로 재현할 수 있으며 현재 제공된 공개 주소의 배포를 확인했습니다. BR-A 대표작과 문서의 주소도 갱신했습니다. Vercel 대시보드 Git 연결 상태는 이번 API 권한으로 확인하지 못했습니다. 새 Vercel 주소의 시크릿 실행·휴대폰 음성 청취는 사용자 직접 확인을 받았습니다.
 
 ## 현재 검증의 한계
 
-로컬 및 Vercel 공개 앱 cloud Chrome UI·오디오 이벤트와 기존 Node 테스트를 확인했습니다. 익명 HTTP로 실행 파일·에셋85개 원본 일치를 확인했습니다. 실제 휴대폰 청취·새 Chrome 시크릿 창 검증을 대신 통과로 표시하지 않습니다. 사용자 제공 이전 5분 한국어 음성 정상 재생 및 최종 자연음 승인 의견은 별도 사용자 증거입니다. [상세 결과](docs/BRB_REPORT.md).
+로컬 및 Vercel 공개 앱 cloud Chrome UI·오디오 이벤트와 기존 Node 테스트를 확인했습니다. 익명 HTTP로 실행 파일·에셋85개 원본 일치를 확인했습니다. 새 Vercel 주소의 실제 휴대폰 청취·Chrome 시크릿 실행은 사용자 직접 확인으로 기록합니다. AI가 실기기 청취했다고 보고하지 않습니다. 사용자 제공 이전 5분 한국어 음성 정상 재생 및 최종 자연음 승인 의견은 별도 사용자 증거입니다. [상세 결과](docs/BRB_REPORT.md).
 
 ---
 
